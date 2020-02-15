@@ -1,0 +1,238 @@
+.course-main{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+
+    &:not(:last-child){
+        margin-bottom: 8rem;
+    }
+
+    @include respond(bp-12){
+        flex-wrap: wrap;
+        margin: 0 10rem;
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+
+    @include respond(bp-11) {
+        flex-wrap: wrap;
+        margin: 0 5rem;
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+
+
+&__box {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    background-color: $color-white-1;
+    box-shadow: 0 1.5rem 2rem rgba($color-black, .15);
+    // min-width: 30rem;
+
+    @include respond(bp-12){
+        margin: 4rem 4rem;
+    }
+
+    @include respond(bp-11){
+        margin: 4rem 4rem;
+    }
+
+    @media only screen and (max-width:60em){
+        margin: 3rem 3rem;
+    }
+
+    @include respond(bp-8){
+        box-shadow: none;
+    }
+
+    @include respond(bp-5){
+        margin: 2rem 2rem;
+    }
+
+    &__upper-part {
+
+        @media only screen and (max-width:60em){
+            display: flex;
+            flex-direction: row;
+        }
+
+        @include respond(bp-6){
+            flex-direction: column;
+        }
+
+        &--title {
+
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $color-white-2;
+            display: inline-block;
+            &--span {
+                padding: 1rem 1rem;
+                background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .80), rgba($color-secondary-dark, .80));
+                -webkit-box-decoration-break: clone;
+                box-decoration-break: clone;
+                position: relative;
+                right: 2rem;
+                top: 1rem;
+            }
+
+            @include respond(bp-4){
+                font-size: 2rem;
+            }
+        }
+
+        &--image {
+
+           height: 30rem;
+           background-size: cover;
+           border-radius: 5px;
+           margin: 2rem;
+           background-blend-mode: multiply;
+           width: 50rem;
+
+           @media only screen and (max-width:60em){
+               height: 32rem;
+           }
+
+           @include respond(bp-6){
+               width: 35rem;
+           }
+
+           @include respond(bp-5) {
+               width: 30rem;
+               height: 25rem;
+           }
+
+           @media only screen and (max-width:22.5em){
+               width: 26rem;
+               height: 23rem;
+           }
+
+           @include respond(bp-3){
+               width: 22rem;
+               height: 20rem;
+           }
+        }
+    }
+
+    &__lower-part {
+        color: $color-dark-grey-2;
+        font-weight: 600;
+        width: 100%;
+
+        @include respond(bp-6){
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--details {
+            padding: 1rem;
+
+            @media only screen and (max-width:60em) {
+               padding: 2rem;
+            }
+
+            @include respond(bp-6){
+                padding: 0;
+            }
+            &--modifier {
+                list-style: none;
+                text-align: center;
+                font-size: 1.7rem;
+                padding: .7rem;
+                text-transform: uppercase;
+
+                @media only screen and (max-width:60em){
+                    padding: 0.5rem;
+                }
+
+                @include respond(bp-6){
+                    display:none;
+                }
+
+                 &::after {
+                     content: "";
+                     display: block;
+                     margin: auto;
+                     width: 40%;
+                     text-align: center;
+                     border-bottom: 0.9px solid $color-dark-grey-2;
+                     padding-top: 1rem;
+                 }
+            }
+        }
+
+        &--btn{
+            display: flex;
+            justify-content: center;
+        }
+    }
+  }
+}
+
+//Electrician Img
+.picture-1 {
+    border-radius: .5rem;
+    background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574934047/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Electrician_g83dok.jpg"),
+        linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+}
+
+//Web-Dev Img
+ .picture-2 {
+     border-radius: .5rem;    
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574934048/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-web-Dev_wgdmaz.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+}
+
+//Welding Img
+ .picture-3 {
+     border-radius: .5rem;     
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574934048/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Welding_ltgmkg.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+
+//Sweaing Img
+ .picture-4 {
+     border-radius: .5rem;     
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/v1574934048/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Sweaing_btjdlp.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+
+//Computer Operator Img
+ .picture-5 {
+     border-radius: .5rem;
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574934047/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Comp_um3q2l.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+
+// //AC Img
+ .picture-6 {
+     border-radius: .5rem;
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574934047/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-AC_ikq3wj.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+
+// //Screen Printing Img
+ .picture-7 {
+     border-radius: .5rem;
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574934048/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Screen-Printing_glm6q9.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+
+// //Plumbing Img
+ .picture-8 {
+     border-radius: .5rem;
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574934048/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Plumbing_600x447_jiujci.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+
+
+
+

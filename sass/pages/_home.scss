@@ -1,0 +1,195 @@
+.about-section {
+    background-color: $color-white-2;
+    scroll-behavior: smooth;
+    padding: 10rem 0rem;
+
+        @include respond(bp-12){
+            padding: 7rem 0rem;
+        }
+
+        @include respond(bp-11){
+           padding: 5rem 0rem;
+        }
+
+        @include respond(bp-5){
+            padding: 6rem 0rem 2rem 0rem;
+        }
+
+         @media only screen and (max-width:25.880em) {
+            padding: 6rem 0rem 4rem 0rem;
+        }
+
+        @media  only screen and (max-width:22.5em){
+            padding: 3rem 0rem;
+        }
+
+}
+
+
+.faculty-section {
+    background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),
+    url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574930796/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-3_bqtr9h.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    text-align: center;
+    scroll-behavior: smooth;
+    padding: 10rem 0rem;
+
+    @include respond(bp-12){
+        padding: 12rem 0rem;
+    }
+
+    @include respond(bp-11) {
+        padding: 10rem 0rem;
+    }
+
+    @include respond(bp-8) {
+        padding: 5rem 0rem;
+    }
+
+    @include respond(bp-7){
+        transform: skewY(-7deg);
+        padding: 10rem 0rem;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+        background-size: cover;
+        & > *{
+            transform: skewY(7deg);
+        }
+    }
+
+    @include respond(bp-5){
+        padding: 10rem 0rem;
+    }
+
+     @media only screen and (max-width:25.880em) {
+        padding: 7rem 0rem;
+        background-image: linear-gradient(to right bottom, $color-secondary-dark, $color-secondary-2);
+    }
+
+
+    @media only screen and (max-width:22.5em) {
+        padding: 7rem 0rem;
+    }
+
+}
+        
+.course-section {
+    background-color: $color-white-2;
+    scroll-behavior: smooth;
+    padding: 10rem 0rem;
+
+    @include respond(bp-12){
+        padding: 12rem 0rem;
+    }
+
+    @include respond(bp-11){
+        padding: 10rem 0rem;
+    }
+
+    @include respond(bp-8) {
+        padding: 6rem 0rem;
+    }
+
+    @include respond(bp-7) {
+        padding: 8rem 0rem;
+    }
+
+    @include respond(bp-6){
+        padding: 8rem 0rem;
+    }
+
+    @media only screen and (max-width:25.880em) {
+        padding: 7rem 0rem;
+    }
+
+
+    @media only screen and (max-width:22.5em) {
+        padding: 7rem;
+    }
+}
+
+
+.enroll-section {
+    height: 60vh;
+    background-image: linear-gradient(to right, $color-secondary-dark-opacity, $color-secondary-light-opacity),
+    url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574945457/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Form-img_idxeb8.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    backface-visibility: hidden;            //FOR PROVIDING HARDWARE ACCELERATION WHILE SCROLLING
+    scroll-behavior: smooth;
+    padding: 15rem 0rem;
+
+    @include respond(bp-12){
+        padding: 12rem 0rem;
+    }
+
+    @include respond(bp-11) {
+        padding: 10rem 0rem;
+    }
+
+    @include respond(bp-8) {
+        padding: 5rem 0rem;
+    }
+
+    @include respond(bp-7) {
+        transform: skewY(-7deg);
+        padding: 7rem 0rem;
+        height: 50vh;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+
+        &>* {
+            transform: skewY(7deg);
+        }
+    }
+
+    @include respond(bp-6){
+        padding: 10rem 0rem 17rem 0rem;
+    }
+
+    @include respond(bp-5){
+        padding: 8rem 0rem 18rem 0rem;
+    }
+
+
+   
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+    // @include respond(bp-11){
+    //     // clip-path: polygon(50% 12%, 100% 0, 100% 86%, 50% 100%, 0 86%, 0 0);
+    //     margin-top: -11rem;
+    //     margin-bottom: -16rem;
+    // }    
+
+    // @include respond(bp-10){
+    //     // clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0, 50% 16%);
+    //     height: 30rem;
+    // }
+
+    // @include respond(bp-6){
+    //     clip-path: polygon(0 23%, 100% 0%, 100% 77%, 0% 100%);
+    //     margin-top: -18rem;
+    // }
+
+    // @media only screen and(max-width:23.4375em){
+    //     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    // }
+
+    // @media only screen and(max-width:22.5em){
+    //     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    // }
+
+    // @include respond(bp-3){
+    //     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    // }
+}
+

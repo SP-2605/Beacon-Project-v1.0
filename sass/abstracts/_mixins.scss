@@ -1,0 +1,103 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin vertical-align($position) {
+    position: $position;
+    // top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin all-transition($time) {
+    transition: all $time;
+    -webkit-transition: all $time;
+}
+
+// MEDIA QUERY MANAGER
+/*
+bp-1 [100px]=>[6.25em]
+bp-2 [200px]=>[12.5em]
+bp-3 [300px]=>[20em]
+bp-4 [400px]=>[25em]
+bp-5 [500px]=>[31.25em]
+bp-6 [600px]=>[37.5em]
+bp-7 [700px]=>[43.75em]
+bp-8 [800px]=>[50em]
+bp-9 [900px]=>[56.25em]
+bp-10[1100px]=>[68.75em]
+bp-11[1200px]=>[75em]
+bp-12[1300 to 1600px]=>[81.25em to 100em]
+bp-13[1800+]=>[112.5em]
+
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == bp-1{            
+        @media only screen and (max-width:6.25em) {@content};      
+    }
+
+    @if $breakpoint == bp-2 {
+        @media only screen and (max-width:12.5em) {@content};              
+    }
+
+    @if $breakpoint == bp-3 {
+        @media only screen and (max-width:20em) {@content};        
+    }
+
+    @if $breakpoint == bp-4 {
+        @media only screen and (max-width:25em) {@content};        
+    }
+
+    @if $breakpoint == bp-5 {
+        @media only screen and (max-width:31.25em) {@content};     
+    }
+
+    @if $breakpoint == bp-6{
+        @media only screen and (max-width: 37.5em) {@content};     
+    }
+    
+    @if $breakpoint == bp-7{
+        @media only screen and (max-width: 43.75em) {@content};    
+    }
+
+    @if $breakpoint == bp-8{
+        @media only screen and (max-width: 50em) {@content};       
+    }
+
+    @if $breakpoint == bp-9{
+        @media only screen and (max-width: 56.25em) {@content};    
+    }
+
+    @if $breakpoint == bp-10{
+        @media only screen and (max-width: 68.75em) {@content};    
+    }
+
+    @if $breakpoint == bp-11{
+        @media only screen and (max-width:75em) {@content};
+    }
+
+    @if $breakpoint == bp-12{
+        @media only screen and (min-width: 81.25em) and (max-width:100em){@content};
+    }
+
+    @if $breakpoint==bp-13 {
+        @media only screen and (min-width: 112.5em) {@content};
+    }
+}

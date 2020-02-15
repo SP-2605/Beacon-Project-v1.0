@@ -1,0 +1,95 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),
+    url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574945458/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Main-page_ejdnsn.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    position: relative;
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        clip-path: polygon(50% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+        -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    }
+
+    @include respond(bp-7) {
+        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+    }
+
+    @include respond(bp-6){
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+    }
+
+    @media only screen and (max-width:25.875em){
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+    }
+
+
+    &__google-translate {
+       position: absolute;
+       left: 15rem;
+       top: 5rem;
+       border: 2px solid $color-light-grey;
+       padding: 6px;
+       border-radius: 3px;  
+       background-color:$color-light-grey;
+
+       @include respond(bp-6){
+           left: 2rem;
+           top: 2rem;
+       }
+        
+        @include respond(bp-5) {
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        @include respond(bp-3) {
+            background-color: transparent;
+            border-color: transparent;
+            left: 0rem;
+            top: 0rem;
+        }
+
+    }
+
+    &__logo-box {
+        position: absolute;
+        left: 3rem;
+        top: 3rem;
+        width: 10rem;
+
+        @include respond(bp-6) {
+          left: 2rem;
+          top: 1.5rem;
+        }
+    }
+
+    &__logo {
+        height: 9.3rem;
+        width: 9.5rem;
+        animation-name: logoFade;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in;
+        border-radius: 10rem;
+
+        @include respond(bp-6){
+            height: 8rem;
+            width: 8rem;
+            visibility: hidden;
+            display: none;
+        }
+
+    }
+
+    &__text-box {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}

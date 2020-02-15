@@ -1,0 +1,580 @@
+.enrolling-option {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+
+
+    @include respond(bp-6) {
+        flex-direction: column;
+        align-items: center;
+        align-content: space-evenly;
+
+        &__sign-in {
+            flex: 1 0 0;
+        }
+
+        &__login {
+            flex: 1 0 0;
+        }
+    }
+
+}
+
+.login-content {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__image {
+
+        display: flex;
+
+        &--modifier {
+            height: 100vh;
+            flex-grow: 1;
+        }
+
+        @include respond(bp-11){
+            display: none;
+        }
+
+        @include respond(bp-10) {
+            display: none;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+        width: 100%;
+        background-color: $color-white-1;
+
+
+        &--title {}
+
+        &--profile {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            &--modifier {
+                height: 20rem;
+                border-radius: 10rem;
+
+                @include respond(bp-11) {
+                   height: 20rem;
+                }
+
+                @include respond(bp-10) {
+                    height: 20rem;
+                }
+            }
+        }
+
+        &--field {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &--input {
+
+                font-size: 2rem;
+                font-family: inherit;
+                color: inherit;
+                padding: 1.5rem 1.5rem;
+                border-radius: 3px;
+                background-color: rgba($color-dark-grey-3, 0.84);
+                border: none;
+                border-bottom: 2px solid transparent;
+                width: 80%;
+                height: 10%;
+                display: block;
+                position: relative;
+                top: 2rem;
+                margin-bottom: -1rem;
+
+                //This is by default valid
+                &:focus {
+                    outline: none;
+                    border-bottom: 2px solid $color-primary;
+                    transition: all .3s;
+                    transition-timing-function: ease-in-out;
+                }
+
+                &:focus:invalid {
+                    border-bottom: 2px solid $color-secondary-dark;
+                    transition: all .5s;
+                    transition-timing-function: ease-in-out;
+                    outline: none;
+                }
+
+                &::-webkit-input-placeholder {
+                    color: $color-dark-grey-1;
+                }
+            }
+
+            &--label {
+                font-size: 1.6rem;
+                font-family: inherit;
+                font-weight: 700;
+                margin-top: 3.5rem;
+                display: inline-block;
+                transition: all .3s;
+
+                align-self: flex-start;
+                margin-left: 7rem;
+            }
+        }
+
+        &--proceed {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &--modifier {
+                flex: 0 0 85%;
+                text-align: center;
+                font-size: 2.5rem!important;
+                text-transform: uppercase;
+            }
+
+        }
+
+    }
+
+    // + => [adjacent sibling selector] 
+    // ~ => [general sibling sselector] 
+
+    &__form--field--input:placeholder-shown+&__form--field--label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+    //This is to remove the spinner button in input:type = number
+
+    &__form--field--input[type=number]::-webkit-inner-spin-button,
+    &__form--field--input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+}
+
+.signup-content {
+    display: flex;
+    flex-direction: row;
+    background-color: $color-white-1;
+
+    &__image {
+        display: flex;
+
+        &--modifier {
+            height: 100vh;
+            flex-grow: 1;
+        }
+
+    }
+
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+        width: 100%;
+        background-color: $color-white-1;
+        border-radius: 5px;
+
+        &--title {}
+
+        &--profile {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            &--modifier {
+                height: 20rem;
+                border-radius: 10rem;
+
+                @include respond(bp-11) {
+                    height: 20rem;
+                }
+
+                 @include respond(bp-10) {
+                     height: 20rem;
+                 }
+            }
+
+        }
+
+        &--field {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &--input {
+                font-size: 2rem;
+                font-family: inherit;
+                color: inherit;
+                padding: 1.5rem 1.5rem;
+                border-radius: 3px;
+                background-color: rgba($color-dark-grey-3, 0.84);
+                border: none;
+                border-bottom: 2px solid transparent;
+                width: 80%;
+                height: 10%;
+                display: block;
+                position: relative;
+                top: 2rem;
+                margin-bottom: -1rem;
+
+                //This is by default valid
+                &:focus {
+                    outline: none;
+                    border-bottom: 2px solid $color-primary;
+                    transition: all .3s;
+                    transition-timing-function: ease-in-out;
+                }
+
+                &:focus:invalid {
+                    border-bottom: 2px solid $color-secondary-dark;
+                    transition: all .5s;
+                    transition-timing-function: ease-in-out;
+                    outline: none;
+                }
+
+                &::-webkit-input-placeholder {
+                    color: $color-dark-grey-1;
+                }
+
+            }
+
+            &--label {
+                font-size: 1.6rem;
+                font-family: inherit;
+                font-weight: 700;
+                margin-top: 3.5rem;
+                display: inline-block;
+                transition: all .3s;
+                align-self: flex-start;
+                margin-left: 7rem;
+
+                @include respond(bp-10){
+                    margin-left: 8rem;
+                }
+
+                @media only screen and(max-width:60em) {
+                    margin-left: 7rem;
+                }
+
+                @media only screen and(max-width:25.875em) {
+                    margin-left: 5rem;
+                }
+            }
+        }
+
+        &--radio {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            &--content {
+                display: inline-block;
+            }
+
+            &--input {
+                display: none;
+            }
+
+            &--label {
+                font-size: 2.1rem;
+                font-family: inherit;
+                cursor: pointer;
+                position: relative;
+                padding-left: 5rem;
+            }
+
+            &--button {
+                height: 2.4rem;
+                width: 2.4rem;
+                border-radius: 50%;
+                display: inline-block;
+                border: 6px solid $color-primary;
+                position: absolute;
+                left: 0;
+                top: -0.4rem;
+
+
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 1.6rem;
+                    width: 1.6rem;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: $color-primary;
+                    opacity: 0;
+                    transition: opacity .4s ease;
+                }
+            }
+
+
+        }
+
+        &--proceed {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+
+            &--modifier {
+                flex: 0 0 83%;
+                text-align: center;
+                font-size: 2.5rem!important;
+                text-transform: uppercase;
+
+                @include respond(bp-11){
+                    flex:0 0 73%;
+                }
+
+            }
+        }
+    }
+
+    // + => [adjacent sibling selector] 
+    // ~ => [general sibling selector] 
+
+    &__form--field--input:placeholder-shown+&__form--field--label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+    //This is to remove the spinner button in input:type = number
+
+    &__form--field--input[type=number]::-webkit-inner-spin-button,
+    &__form--field--input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+    &__form--radio--input:checked~&__form--radio--label &__form--radio--button::after {
+        opacity: 1;
+    }
+
+}
+
+.otp-content {
+
+    display: flex;
+    flex-direction: row;
+
+    &__image {
+        display: flex;
+
+        &--modifier {
+            height: 100vh;
+            flex-grow: 1;
+        }
+
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+        width: 100%;
+        background-color: $color-white-1;
+        border-radius: 5px;
+
+        &--title {}
+
+
+        &--field {
+
+            display: flex;
+            flex-direction: column;
+
+            &--input {
+                font-size: 2rem;
+                font-family: inherit;
+                color: inherit;
+                padding: 1.5rem 1.5rem;
+                border-radius: 3px;
+                background-color: rgba($color-dark-grey-3, 0.84);
+                border: none;
+                border-bottom: 2px solid transparent;
+                height: 7rem;
+                display: block;
+                position: relative;
+                width: 85%;
+                align-self: center;
+
+                //This is by default valid
+                &:focus {
+                    outline: none;
+                    border-bottom: 2px solid $color-primary;
+                    transition: all .3s;
+                    transition-timing-function: ease-in-out;
+                }
+
+                &:focus:invalid {
+                    border-bottom: 2px solid $color-secondary-dark;
+                    transition: all .5s;
+                    transition-timing-function: ease-in-out;
+                    outline: none;
+                }
+
+                &::-webkit-input-placeholder {
+                    color: $color-dark-grey-1;
+                }
+
+            }
+
+            &--label {
+                font-size: 1.6rem;
+                font-family: inherit;
+                font-weight: 600;
+                margin-top: 2rem;
+                margin-left: 6rem;
+                display: inline-block;
+                transition: all .3s;
+
+                align-self: flex-start;
+            }
+        }
+
+        &--proceed {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &--modifier {
+                flex: 0 0 90%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2.5rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    // + => [adjacent sibling selector] 
+    // ~ => [general sibling selector] 
+
+    &__form--field--input:placeholder-shown+&__form--field--label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+    //This is to remove the spinner button in input:type = number
+
+    &__form--field--input[type=number]::-webkit-inner-spin-button,
+    &__form--field--input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+}
+
+.procedure-content {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__image {
+        display: flex;
+
+        &--modifier {
+            height: 70rem;
+            flex-grow: 1;
+
+        }
+    }
+
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+        height: 90%;
+        width: 100%;
+        background-color: $color-white-1;
+
+        &--title {}
+
+        &--para {
+            display: flex;
+            margin: 0 3.5rem;
+            width: 90%;
+            align-self: center;
+
+            &--modifier {
+                font-size: 2rem;
+                text-align: justify;
+                line-height: 3rem;
+                letter-spacing: 0.5px;
+                align-self: center;
+
+                 @include respond(bp-6) {
+                     font-size: 2rem;
+                     line-height: 2.8rem;
+                     letter-spacing: 0.5px;
+                 }
+
+                 @media only screen and (max-width:23.5375em){
+                     font-size: 2rem;
+                     line-height: 2.4rem;
+                     letter-spacing: .1px;
+                 }
+
+                 @media only screen and (max-width:22.5em) {
+                     font-size: 1.8rem !important;
+                     line-height: 2.2rem;
+                     letter-spacing: 0;
+                 }
+            }
+        }
+
+        &--proceed {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin-top: 7rem;
+
+            &--modifier {
+                flex-grow: 0.85;
+                text-align: center;
+                font-size: 2.5rem!important;
+            }
+        }
+
+    }
+}

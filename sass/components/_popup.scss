@@ -1,0 +1,326 @@
+.popup,
+.login-popup,
+.signup-popup,
+.faculty-popup,
+.procedure-popup,
+.otp-popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-dark-grey-2, .98);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+
+    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .3);
+    }
+
+
+    &__content {
+        @include absCenter;
+        width: 70%;
+        height: 67%;
+        border: 3px solid $color-secondary-light;
+        border-radius: 3px;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.80);
+        transition: all .5s;
+
+        @include respond(bp-13) {
+            width: 133rem;
+            height: 75rem;
+        }
+
+        @include respond(bp-12) {
+            width: 98rem;
+            height: 55rem;
+        }
+
+        @include respond(bp-11) {
+            width: 96rem;
+            height: 54rem;
+        }
+
+        @include respond(bp-10) {
+            width: 96rem;
+            height: 54rem;
+        }
+
+        @include respond(bp-9) {
+            width: 80rem;
+            height: 45rem;
+        }
+
+        @include respond(bp-8) {
+            width: 70rem;
+            height: 40rem;
+        }
+
+        @include respond(bp-7) {
+            width: 60rem;
+            height: 34rem;
+        }
+
+        @include respond(bp-5) {
+           width: 44rem;
+           height: 25rem;
+        }
+
+        @media only screen and (max-width:25.875em) {
+            width: 35rem;
+            height: 20rem;
+        }
+
+
+        @media only screen and (max-width:25.6875em) {
+            width: 35rem;
+            height: 20rem;
+        }
+
+        @include respond(bp-4) {
+            width: 34rem;
+            height: 19.5rem;
+        }
+
+        @media only screen and (max-width:23.4375em) {
+            width: 33rem;
+            height: 19rem;
+        }
+
+
+        @media only screen and (max-width:22.5em) {
+            width: 32rem;
+            height: 18.5rem;
+        }
+
+        @include respond(bp-3) {
+           width: 28rem;
+           height: 16rem;
+        }
+
+    }
+
+    &__video {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    &__enroll-content {
+        @include absCenter;
+        background-color: $color-white-1;
+        // width: 67%;
+        // height: 77%;
+        border: 4px solid $color-secondary-light;
+        border-radius: 3px;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.80);
+        transition: all .5s;
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    &:target &__content,
+    &:target &__enroll-content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+
+    }
+
+    //CLOSE BTN   
+    &__close,
+    &__close-enroll {
+
+        &:link,
+        &:visited {
+            color: $color-white-2;
+            position: absolute;
+            top: 2.4rem;
+            right: 4rem;
+            font-size: 5rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .4s;
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        &:hover {
+            color: $color-secondary-dark;
+        }
+    }
+
+    &__close-enroll{
+
+        &:link,
+        &:visited{
+
+            @include respond(bp-13){
+                z-index: 10000; 
+                color: $color-dark-grey-4;
+            }
+
+            // @media only screen and (max-width:25.875em) {
+            //     z-index: 1000;
+            //     top: 1.5rem;
+            //     right: 3rem;
+            //     color: $color-secondary-2;
+            // }
+
+            // @media only screen and (max-width:22.5em) {
+            //     z-index: 1000;
+            //     top: 1rem;
+            //     right: 3rem;
+            //     color: $color-secondary-2;
+            // }
+        }
+
+    }
+
+}
+
+.login-popup{
+    &__enroll-content{
+        height: 100%;
+        width: 100%;
+        //  @include respond(bp-7) {
+        //      height: 70%;
+        //  }
+
+        //   @include respond(bp-6) {
+        //       height: 60%;
+        //   }
+
+        //   @include respond(bp-5) {
+        //       width: 90%;
+        //       height: 55%;
+        //   }
+
+        //   @media only screen and (max-width:25.875em) {
+        //       width: 90%;
+        //       height: 92%;
+        //   }
+
+        //    @media only screen and (max-width:22.5em) {
+        //        width: 90%;
+        //        height: 92%;
+        //    }
+    }
+}
+
+.signup-popup {
+
+    &__enroll-content {
+        height: 100%;
+        width: 100%;
+        // @include respond(bp-13){
+        //     width: 70%;
+        //     height: 80%;
+        // }
+
+        // @include respond(bp-7) {
+        //     height: 70%;
+        // }
+
+        // @include respond(bp-6) {
+        //     height: 60%;
+        // }
+
+        // @include respond(bp-5) {
+        //     width: 90%;
+        //     height: 55%;
+        // }
+        
+        // @media only screen and (max-width:25.875em) {
+        //     width: 90%;
+        //     height: 92%;
+        // }
+
+        // @media only screen and(max-width:22.5em){
+        //    width: 90%;
+        //    height: 92%;
+        // }
+    }
+}
+
+.procedure-popup{
+    &__enroll-content{
+        height: 100%;
+        width: 100%;
+        // @include respond(bp-13){
+        //     width: 75%;
+        //     height: 75%;
+        // }
+        // @include respond(bp-7) {
+        //     height: 70%;
+        // }
+
+        //  @include respond(bp-6) {
+        //      height: 60%;
+        //  }
+
+        //  @include respond(bp-5) {
+        //      width: 90%;
+        //      height: 55%;
+        //  }
+
+        //  @media only screen and (max-width:25.875em) {
+        //      width: 90%;
+        //      height: 92%;
+        //  }
+         
+        //   @media only screen and (max-width:22.5em) {
+        //       width: 90%;
+        //       height: 92%;
+        //   }
+
+    }
+}
+
+.otp-popup {
+
+    &__enroll-content {
+        width: 45%;
+        height: 50%;
+
+        // @media only screen and(max-width:60em){
+        //     width: 45%;
+        //     height: 45%;
+        // }
+
+        // @include respond(bp-9) {
+        //     width: 60%;
+        //     height: 42%;
+        // }
+
+        // @include respond(bp-7){
+        //     width: 60%;
+        //     height: 45%;
+        // }
+
+        // @include respond(bp-6){
+        //     width: 65%;
+        //     height: 40%;
+        // }
+
+        // @include respond(bp-5){
+        //     width: 80%;
+        //     height: 35%;
+        // }
+
+    }
+
+}
+

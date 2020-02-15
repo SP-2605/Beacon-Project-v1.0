@@ -1,0 +1,179 @@
+.image-cluster {
+    position: relative;
+
+    @include respond(bp-10){
+        display: none;
+    }
+
+    &__photo {
+        width: 60%;
+        box-shadow: 0 1.6rem 10rem rgba($color-black, .4);
+        border-radius: .5rem;
+        position: absolute;
+        transition: all .2s;
+        outline-offset: .8rem;
+
+        // @include respond(bp-10){
+        //     box-shadow: none;
+        // }
+
+        // @include respond(bp-9) {
+        //     box-shadow: none;
+        // }
+
+        &--p1 {
+            left: -2rem;
+            top: -2rem;
+
+            @include respond(bp-11){
+                left: 6rem;
+                top: 3rem;
+                z-index: 100;
+            }
+
+            // @include respond(bp-10){
+            //     width: 45%;
+            //     left: -12.5rem;
+            //     top: 0rem;
+            // }
+
+            // @media only screen and (max-width:60em){
+            //     width: 50%;
+            //     left: -13.5rem;
+            //     top: 0rem;
+            // }
+
+            // @include respond(bp-9){
+            //     width: 50%;
+            //     left: -13.5rem;
+            //     top: 0rem;
+            // }
+
+            // @include respond(bp-8){
+            //     width: 43%;
+            //     left: -8.5rem;
+            //     top: 0rem;
+            // }
+
+            // @include respond(bp-7){
+            //    display:none;
+            // }
+
+        }
+    
+
+        &--p3 {
+            right: -2rem;
+            top: 4rem;
+
+             @include respond(bp-11){
+                right: -2rem;
+                top: 17rem;
+            }
+
+            // @include respond(bp-10){
+            //     width: 45%;
+            //     right: -12rem;
+            //     top: 0rem;
+            // }
+
+            // @media only screen and (max-width:60em) {
+            //    width: 50%;
+            //    right: -13.5rem;
+            //    top: 0rem;
+            // }
+
+            // @include respond(bp-9){
+            //     width: 50%;
+            //     right: -13.5rem;
+            //     top: 0rem;
+            // }
+
+            // @include respond(bp-8) {
+            //    width: 43%;
+            //    right: -8.5rem;
+            //    top: 0rem;
+            // }
+
+            // @include respond(bp-7){
+            //    display:none;
+            // }
+
+        }
+    
+
+        &--p2 {
+            left: 20%;
+            top: 15rem;
+
+             @include respond(bp-11){
+               left: 0%;
+               top: 22rem;
+               z-index: 10;
+            }
+
+            // @include respond(bp-10){
+            //     width: 45%;
+            //     left: 27%;
+            //     top: 5rem;
+            // }
+
+            // @media only screen and (max-width:60em){
+            //     width: 50%;
+            //     left: 25%;
+            //     top: 5rem;
+            // }
+
+            // @include respond(bp-9){
+            //     width: 50%;
+            //     left: 25%;
+            //     top: 4rem;
+            // }
+
+            // @include respond(bp-8) {
+            //     width: 43%;
+            //     top: 5rem;
+            //     left: 28.5%;
+            // }
+
+            //  @include respond(bp-7) {
+            //     display:none;
+            //  }
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 50;
+            outline: 1rem solid $color-secondary-light;
+
+            @include respond(bp-10){
+                transform: none;
+                box-shadow: none;
+                outline: none;
+            }
+
+            @include respond(bp-9) {
+                transform: none;
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }
+
+     &:hover &__photo:not(:hover) {
+         transform: scale(.90);
+         filter: blur(3px) brightness(60%);
+
+         @include respond(bp-10){
+             transform: none;
+             filter: none;
+         }
+
+          @include respond(bp-9) {
+              transform: none;
+              filter: none;
+          }
+
+     }
+}
