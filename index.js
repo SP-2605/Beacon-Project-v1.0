@@ -18,6 +18,29 @@ AOS.init({
     }
 });
 
+//Glide
+$(document).ready(function(){
+    const config = {
+        type: 'carousel',
+        perView: 1,
+        gap: 20,
+        autoplay: true,
+        autoplay: 4000,
+        animationDuration:2000,
+    }
+    new Glide(".glide", config).mount()
+})
+$(document).ready(function(){
+    const config = {
+        type: 'carousel',
+        perView: 1,
+        autoplay: true,
+        autoplay: 3000,
+        animationDuration: 2500,
+    }
+    new Glide(".glide1", config).mount()
+})
+
 //IMAGE OPTIMIZER
 $(document).ready(function () {
     

@@ -1,0 +1,54 @@
+ .flash-news-box{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 1.5rem;
+
+     &__updates{
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-content: center;
+         width: 50vw;
+
+         &__marquee {
+             height: 40vh;
+             text-align: center;
+             display: flex;
+             flex-direction: column;
+         }
+
+         &__flash-text {
+             cursor: pointer;
+             color: $color-light-grey;
+             font-weight: 600;
+             font-size: 3rem;
+             text-decoration: none;
+             text-transform: uppercase;
+             margin: 3rem;
+
+         }
+
+         &__list {
+             list-style: none;
+
+             &:not(:last-child) {
+                 margin-bottom: 3rem;
+             }
+         }
+
+    }
+
+    &__batch-pics{
+        width: 45vw;
+
+        &--modifier{
+            height: 100%;
+            width: 100%;
+            z-index: 20;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    }
+}

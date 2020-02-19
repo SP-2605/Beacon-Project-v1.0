@@ -25,6 +25,21 @@
 
 }
 
+.flash-news{
+    background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),
+    url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582147910/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/News_updates_bpsooe.jpg");
+    padding: 10rem 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.gallery{
+    background-color: $color-white-2;
+    scroll-behavior: smooth;
+    padding: 10rem 0;
+}
+
 
 .faculty-section {
     background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),

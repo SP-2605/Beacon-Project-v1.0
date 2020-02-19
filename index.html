@@ -12,6 +12,12 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/loader.css">
+  <!-- Glide JS -->
+  <!-- Required Core Stylesheet -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+  <!-- Optional Theme Stylesheet -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
   <!-- Ionicons -->
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <!-- Google Font -->
@@ -24,7 +30,7 @@
   <script src="bower_components/aos/dist/aos.js"></script>
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<title>BEACON BY SIES</title>
+  <title>BEACON BY SIES</title>
 </head>
 
 <body id="Main-Body">
@@ -40,7 +46,7 @@
   <!-- PAGE LOADER ENDS-->
   <!-- ==================================================== -->
   <!-- POPUP VIDEO -->
-  <div class="popup" id="popup" data-aos="zoom-in" data-aos-duration="1000">
+  <div class="popup" id="popup">
     <!-- CLOSE-BTN -->
     <a href="#Main-Body" class="popup__close">&times;</a>
     <!-- CONTENT -->
@@ -69,7 +75,9 @@
         <script>
           function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-              pageLanguage: 'en', includedLanguages: 'hi,en', autoDisplay: true
+              pageLanguage: 'en',
+              includedLanguages: 'hi,en',
+              autoDisplay: true
             }, 'google_translate_element');
           }
         </script>
@@ -87,13 +95,13 @@
     <!-- LOGO BOX ENDS-->
 
     <!-- TEXT BOX + INTRO VIDEO BTN-->
-      <div class="header__text-box">
-        <h1 class="heading-type-1">
-          <span class="heading-type-1--main">Beacon</span>
-          <span class="heading-type-1--sub">Educating For Human Greatness</span>
-        </h1>
-        <a href="#popup" id="Intro-video-button" class="btn btn--white btn--animated">Introductory Video</a>
-      </div>
+    <div class="header__text-box">
+      <h1 class="heading-type-1">
+        <span class="heading-type-1--main">Beacon</span>
+        <span class="heading-type-1--sub">Educating For Human Greatness</span>
+      </h1>
+      <a href="#popup" id="Intro-video-button" class="btn btn--white btn--animated">Introductory Video</a>
+    </div>
     <!-- TEXT BOX + INTRO VIDEO BTN ENDS-->
 
   </header>
@@ -104,58 +112,210 @@
     <!-- ===============================================================================================================================================================================   -->
     <!-- SECTION 1 [2nd Page : Abouts of Beacon] -->
     <section class="about-section" id="ABOUT">
-      <!-- <div class="about-section" id="ABOUT"> -->
 
-        <div class="u-class-center u-margin-bottom-large">
-          <!--[u => utilities section in main.scss]-->
-          <h2 class="heading-type-2">
-            Education fills the empty mind with good things
-          </h2>
+      <div class="u-class-center u-margin-bottom-large">
+        <!--[u => utilities section in main.scss]-->
+        <h2 class="heading-type-2">
+          Education fills the empty mind with good things
+        </h2>
+      </div>
+
+      <div class="row">
+        <!-- Information about Beacon -->
+        <div class="col-1-of-2">
+          <h3 class="heading-type-4 u-margin-bottom-small">Gaining knowledge is the first step of wisdom. Sharing it,
+            is the first step of humanity.</h3>
+          <p class="paragraph">
+            Project Beacon Is a small step to give meaning and purpose to someone's life. As it is rightly said
+            <strong>"It costs a candle
+              nothing to light another candle"</strong>, we pledge to be the candle of inspiration and go on to light
+            the Beacon of Knowledge.
+          </p>
+
+          <h3 class="heading-type-4 u-margin-bottom-small">Those who have the ability to act, have the responsibility
+            to act</h3>
+          <p class="paragraph">
+            Creating a sensitive, motivational and professional environment of vocational training for such sections
+            of the society
+            will enable them to acquire skills which will help them get respectable jobs and also empower them to make
+            a dignified
+            living.
+          </p>
+
+          <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1574944174/Beacon%20Files/PDF%27s/About-Beacon_fabfpt.pdf"
+            class="btn-Read-More" target="_Blank"> Read More <ion-icon class="btn-Read-More__icon"
+              name="arrow-dropright"></ion-icon></a>
+        </div>
+        <!-- Image-Cluster at About Section -->
+        <div class="col-1-of-2">
+          <div class="image-cluster">
+            <img
+              src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574930796/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-5_neb7mo.jpg"
+              alt="photo-1" class="image-cluster__photo image-cluster__photo--p1">
+            <img
+              src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574930796/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-3_bqtr9h.jpg"
+              alt="photo-3" class="image-cluster__photo image-cluster__photo--p3">
+            <img
+              src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574930796/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-4_xxcuza.jpg"
+              alt="photo-2" class="image-cluster__photo image-cluster__photo--p2">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- ===============================================================================================================================================================================   -->
+    <!-- SECTION 2 [3rd Page : News and updates] -->
+    <section class="flash-news">
+      <div class="u-class-center u-margin-bottom-large">
+        <h2 class="heading-type-3">
+          Important Updates
+        </h2>
+      </div>
+
+      <div class="flash-news-box">
+        <div class="flash-news-box__updates">
+          <marquee class="flash-news-box__updates__marquee" behavior="" direction="up">
+            <ul>
+              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="#">About
+                  Principal</a></li>
+              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="#">About
+                  SIESGST</a></li>
+              <li class="flash-news-box__updates__list"> <a class="flash-news-box__updates__flash-text"
+                  href="#">Admission
+                  For Jan-july 2020</a></li>
+              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="#">ISR
+                  Beacon
+                  Coordinator</a></li>
+              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text"
+                  href="#">Certified
+                  students[June-Dec 2019]</a></li>
+            </ul>
+          </marquee>
         </div>
 
-        <div class="row">
-          <!-- Information about Beacon -->
-          <div class="col-1-of-2">
-            <h3 class="heading-type-4 u-margin-bottom-small">Gaining knowledge is the first step of wisdom. Sharing it,
-              is the first step of humanity.</h3>
-            <p class="paragraph">
-              Project Beacon Is a small step to give meaning and purpose to someone's life. As it is rightly said
-              <strong>"It costs a candle
-                nothing to light another candle"</strong>, we pledge to be the candle of inspiration and go on to light
-              the Beacon of Knowledge.
-            </p>
-
-            <h3 class="heading-type-4 u-margin-bottom-small">Those who have the ability to act, have the responsibility
-              to act</h3>
-            <p class="paragraph">
-              Creating a sensitive, motivational and professional environment of vocational training for such sections
-              of the society
-              will enable them to acquire skills which will help them get respectable jobs and also empower them to make
-              a dignified
-              living.
-            </p>
-
-            <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1574944174/Beacon%20Files/PDF%27s/About-Beacon_fabfpt.pdf"
-              class="btn-Read-More" target="_Blank"> Read More <ion-icon class="btn-Read-More__icon"
-                name="arrow-dropright"></ion-icon></a>
-          </div>
-          <!-- Image-Cluster at About Section -->
-          <div class="col-1-of-2">
-            <div class="image-cluster">
-              <img
-                src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574930796/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-5_neb7mo.jpg"
-                alt="photo-1" class="image-cluster__photo image-cluster__photo--p1">
-              <img
-                src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574930796/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-3_bqtr9h.jpg"
-                alt="photo-3" class="image-cluster__photo image-cluster__photo--p3">
-              <img
-                src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574930796/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-4_xxcuza.jpg"
-                alt="photo-2" class="image-cluster__photo image-cluster__photo--p2">
+        <div class="flash-news-box__batch-pics">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img class="flash-news-box__batch-pics--modifier" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146804/Beacon%20Files/batch/img_1_xdkvww.jpg"
+                    alt=""></li>
+                <li class="glide__slide"><img class="flash-news-box__batch-pics--modifier" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146813/Beacon%20Files/batch/img_2_apezog.jpg"
+                    alt=""></li>
+                <li class="glide__slide"><img class="flash-news-box__batch-pics--modifier" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146804/Beacon%20Files/batch/img_3_jzp4fk.jpg"
+                    alt=""></li>
+                <li class="glide__slide"><img class="flash-news-box__batch-pics--modifier" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146812/Beacon%20Files/batch/img_4_jjglgn.jpg"
+                    alt=""></li>
+                <li class="glide__slide"><img class="flash-news-box__batch-pics--modifier" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146807/Beacon%20Files/batch/img_5_xufzjk.jpg"
+                    alt=""></li>
+                <li class="glide__slide"><img class="flash-news-box__batch-pics--modifier" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146811/Beacon%20Files/batch/img_6_mbl4i3.jpg"
+                    alt=""></li>
+              </ul>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
+              <button class="glide__bullet" data-glide-dir="=2"></button>
+              <button class="glide__bullet" data-glide-dir="=3"></button>
+              <button class="glide__bullet" data-glide-dir="=4"></button>
+              <button class="glide__bullet" data-glide-dir="=5"></button>
             </div>
           </div>
         </div>
 
-      <!-- </div> -->
+      </div>
+    </section>
+    <!-- ===============================================================================================================================================================================   -->
+    <!-- SECTION 3 [4th Page : Gallery] -->
+    <section class="gallery">
+      <div class="u-class-center u-margin-bottom-large">
+        <h2 class="heading-type-2">
+          Gallery
+        </h2>
+      </div>
+
+      <div class="carousel-box">
+        <div class="glide1">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146912/Beacon%20Files/pictures/carousel_4_aqermo.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146903/Beacon%20Files/pictures/carousel_5_ueeezy.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146826/Beacon%20Files/pictures/carousel_1_j5zdfm.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146862/Beacon%20Files/pictures/carousel_2_ttsvss.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146901/Beacon%20Files/pictures/carousel_3_xrrw8b.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146915/Beacon%20Files/pictures/carousel_6_mji4f5.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146916/Beacon%20Files/pictures/carousel_7_gqruel.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146917/Beacon%20Files/pictures/carousel_8_yd1vs3.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146915/Beacon%20Files/pictures/carousel_9_zlzvxj.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146842/Beacon%20Files/pictures/carousel_10_sqvdv2.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146839/Beacon%20Files/pictures/carousel_11_go6mop.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146840/Beacon%20Files/pictures/carousel_12_pzoqg1.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146833/Beacon%20Files/pictures/carousel_13_ckhypi.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146831/Beacon%20Files/pictures/carousel_14_hrmrse.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146854/Beacon%20Files/pictures/carousel_15_jny2xm.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146858/Beacon%20Files/pictures/carousel_16_icyo2n.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146861/Beacon%20Files/pictures/carousel_17_sldm2p.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146865/Beacon%20Files/pictures/carousel_18_nz2l6u.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146860/Beacon%20Files/pictures/carousel_19_bpwobn.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146874/Beacon%20Files/pictures/carousel_20_wnt7fn.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146885/Beacon%20Files/pictures/carousel_21_obflly.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146888/Beacon%20Files/pictures/carousel_24_r3qeiv.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146883/Beacon%20Files/pictures/carousel_25_coacjs.jpg" alt="">
+              </li>
+              <li class="glide__slide"><img class="carousel-box__img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582146894/Beacon%20Files/pictures/carousel_26_dbuciu.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+          <div class="glide1__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
+            <button class="glide__bullet" data-glide-dir="=5"></button>
+            <button class="glide__bullet" data-glide-dir="=6"></button>
+            <button class="glide__bullet" data-glide-dir="=7"></button>
+            <button class="glide__bullet" data-glide-dir="=8"></button>
+            <button class="glide__bullet" data-glide-dir="=9"></button>
+            <button class="glide__bullet" data-glide-dir="=10"></button>
+            <button class="glide__bullet" data-glide-dir="=11"></button>
+            <button class="glide__bullet" data-glide-dir="=12"></button>
+            <button class="glide__bullet" data-glide-dir="=13"></button>
+            <button class="glide__bullet" data-glide-dir="=14"></button>
+            <button class="glide__bullet" data-glide-dir="=15"></button>
+            <button class="glide__bullet" data-glide-dir="=16"></button>
+            <button class="glide__bullet" data-glide-dir="=17"></button>
+            <button class="glide__bullet" data-glide-dir="=18"></button>
+            <button class="glide__bullet" data-glide-dir="=19"></button>
+            <button class="glide__bullet" data-glide-dir="=20"></button>
+            <button class="glide__bullet" data-glide-dir="=21"></button>
+            <button class="glide__bullet" data-glide-dir="=22"></button>
+            <button class="glide__bullet" data-glide-dir="=23"></button>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- ======================================================================================================================================================================================================================================================================== -->
@@ -170,7 +330,7 @@
 
       <!-- FIRST ROW OF FACULTY BOX -->
       <div class="faculty-box">
-      <!-- FACULTY-NO : 1 [Ram-Bishe Sir]-->
+        <!-- FACULTY-NO : 1 [Ram-Bishe Sir]-->
         <div class="faculty-box__sub">
           <div class="faculty-box__sub--box">
             <!-- PROFILE -->
@@ -182,19 +342,20 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">Ramkishan<br>Bhise</figcaption>
               </figure>
             </div>
-            
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
                 <li><strong>Qualification</strong> : Ph.D(English)</li>
                 <li><strong>Experience</strong> : 10 years</li>
                 <li><strong>Course Taught</strong> : Spoken English</li>
-                <li onclick="window.location.href='mailto:ramkishan.bhise@siesgst.ac.in'"><strong>Email Id</strong> : <br>ramkishan.bhise@siesgst.ac.in</li>
+                <li onclick="window.location.href='mailto:ramkishan.bhise@siesgst.ac.in'"><strong>Email Id</strong> :
+                  <br>ramkishan.bhise@siesgst.ac.in</li>
               </ul>
             </div>
           </div>
         </div>
-        
+
         <!-- FACULTY-NO : 2 [Senthil Sir]-->
         <div class="faculty-box__sub">
           <div class="faculty-box__sub--box">
@@ -207,19 +368,20 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">D.Senthil<br>Kumar</figcaption>
               </figure>
             </div>
-        
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
                 <li><strong>Qualification</strong> : BE(EEE),MBA,ME(EXTC)</li>
                 <li><strong>Experience</strong> : 15 Years</li>
                 <li><strong>Course Taught</strong> : Electrician</li>
-                <li onclick="window.location.href='mailto:senthil.d@siesgst.ac.in'"><strong>Email Id</strong> : <br>senthil.d@siesgst.ac.in</li>
+                <li onclick="window.location.href='mailto:senthil.d@siesgst.ac.in'"><strong>Email Id</strong> :
+                  <br>senthil.d@siesgst.ac.in</li>
               </ul>
             </div>
           </div>
         </div>
-        
+
         <!-- FACULTY-NO : 3 [Mrunal Mam]-->
         <div class="faculty-box__sub">
           <div class="faculty-box__sub--box">
@@ -232,19 +394,20 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">Mrinal<br>Khadse</figcaption>
               </figure>
             </div>
-        
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
-              <li><strong>Qualification</strong> : M.E.[Computer]</li>
-              <li><strong>Experience</strong> : 6 Years</li>
-              <li><strong>Course Taught</strong> : Computer Operator</li>
-              <li onclick="window.location.href='mailto:mrinal.khadse@siesgst.ac.in'"><strong>Email Id</strong> : <br>mrinal.khadse@siesgst.ac.in</li>
+                <li><strong>Qualification</strong> : M.E.[Computer]</li>
+                <li><strong>Experience</strong> : 6 Years</li>
+                <li><strong>Course Taught</strong> : Computer Operator</li>
+                <li onclick="window.location.href='mailto:mrinal.khadse@siesgst.ac.in'"><strong>Email Id</strong> :
+                  <br>mrinal.khadse@siesgst.ac.in</li>
               </ul>
             </div>
           </div>
         </div>
-        
+
         <!-- FACULTY-NO : 4 [Pranita Mam]-->
         <div class="faculty-box__sub">
           <div class="faculty-box__sub--box">
@@ -257,24 +420,25 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">Pranita<br>Mahajan</figcaption>
               </figure>
             </div>
-        
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
-              <li><strong>Qualification</strong> : PhD Pursuing</li>
-              <li><strong>Experience</strong> : 15 Years</li>
-              <li><strong>Course Taught</strong> : Web Designing</li>
-              <li onclick="window.location.href='mailto:pranita.mahajan@siesgst.ac.in'"><strong>Email Id</strong> : <br>pranita.mahajan@siesgst.ac.in</li>
+                <li><strong>Qualification</strong> : PhD Pursuing</li>
+                <li><strong>Experience</strong> : 15 Years</li>
+                <li><strong>Course Taught</strong> : Web Designing</li>
+                <li onclick="window.location.href='mailto:pranita.mahajan@siesgst.ac.in'"><strong>Email Id</strong> :
+                  <br>pranita.mahajan@siesgst.ac.in</li>
               </ul>
             </div>
-        
+
           </div>
         </div>
       </div>
 
       <!-- SECOND ROW OF FACULTY BOX -->
       <div class="faculty-box">
-      <!-- FACULTY-NO : 5 [Bhagyashal Sir]-->
+        <!-- FACULTY-NO : 5 [Bhagyashal Sir]-->
         <div class="faculty-box__sub">
           <div class="faculty-box__sub--box">
             <!-- PROFILE -->
@@ -286,19 +450,20 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">Bhagyashal<br>Waghmare</figcaption>
               </figure>
             </div>
-      
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
                 <li><strong>Qualification</strong> : B.com,PgD IT</li>
                 <li><strong>Experience</strong> : 9 Years</li>
                 <li><strong>Course Taught</strong> : Computer Operator</li>
-                <li onclick="window.location.href='mailto:bhagyashal.waghmare@siesgst.ac.in'"><strong>Email Id</strong> : <br>bhagyashal.waghmare@siesgst.ac.in</li>
+                <li onclick="window.location.href='mailto:bhagyashal.waghmare@siesgst.ac.in'"><strong>Email Id</strong>
+                  : <br>bhagyashal.waghmare@siesgst.ac.in</li>
               </ul>
             </div>
           </div>
         </div>
-      <!-- FACULTY-NO : 6 [Gaurav Sir]-->
+        <!-- FACULTY-NO : 6 [Gaurav Sir]-->
         <div class="faculty-box__sub">
           <div class="faculty-box__sub--box">
             <!-- PROFILE -->
@@ -310,19 +475,20 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">Gaurav<br>Fasate</figcaption>
               </figure>
             </div>
-      
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
                 <li><strong>Qualification</strong> : BE Printing Technology</li>
                 <li><strong>Experience</strong> : 11 Years</li>
                 <li><strong>Course Taught</strong> : Screen Printing</li>
-                <li onclick="window.location.href='mailto:gaurav.fasate@siesgst.ac.in'"><strong>Email Id</strong> : <br>gaurav.fasate@siesgst.ac.in</li>
+                <li onclick="window.location.href='mailto:gaurav.fasate@siesgst.ac.in'"><strong>Email Id</strong> :
+                  <br>gaurav.fasate@siesgst.ac.in</li>
               </ul>
             </div>
           </div>
         </div>
-      <!-- FACULTY-NO : 7 [Vinayak Sir]-->
+        <!-- FACULTY-NO : 7 [Vinayak Sir]-->
         <div class="faculty-box__sub">
           <div class="faculty-box__sub--box">
             <!-- PROFILE -->
@@ -334,19 +500,20 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">Vinayak<br>Chikane</figcaption>
               </figure>
             </div>
-      
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
                 <li><strong>Qualification</strong> : ITI (FITTING)</li>
                 <li><strong>Experience</strong> : 11 Years</li>
                 <li><strong>Course Taught</strong> : Plumbing & Welding</li>
-                <li onclick="window.location.href='mailto:vinayak.chikane@siesgst.ac.in'"><strong>Email Id</strong> : <br>vinayak.chikane@siesgst.ac.in</li>
+                <li onclick="window.location.href='mailto:vinayak.chikane@siesgst.ac.in'"><strong>Email Id</strong> :
+                  <br>vinayak.chikane@siesgst.ac.in</li>
               </ul>
             </div>
           </div>
         </div>
-      <!-- FACULTY-NO : 8 [Ali Sir]-->
+        <!-- FACULTY-NO : 8 [Ali Sir]-->
         <div class="faculty-box__sub">
           <div class="faculty-box__sub--box">
             <!-- PROFILE -->
@@ -358,14 +525,15 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">Ali<br>Ansari</figcaption>
               </figure>
             </div>
-      
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
-              <li><strong>Qualification</strong> : ME Mechanical</li>
-              <li><strong>Experience</strong> : 9 Years</li>
-              <li><strong>Working As</strong> : Dept. Coordinator</li>
-              <li onclick="window.location.href='mailto:mohammada.ansari@gmail.com'"><strong>Email Id</strong> : <br>mohammada.ansari@gmail.com</li>
+                <li><strong>Qualification</strong> : ME Mechanical</li>
+                <li><strong>Experience</strong> : 9 Years</li>
+                <li><strong>Working As</strong> : Dept. Coordinator</li>
+                <li onclick="window.location.href='mailto:mohammada.ansari@gmail.com'"><strong>Email Id</strong> :
+                  <br>mohammada.ansari@gmail.com</li>
               </ul>
             </div>
           </div>
@@ -386,14 +554,15 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">Bade<br>kranti</figcaption>
               </figure>
             </div>
-        
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
                 <li><strong>Qualification</strong> : M.E.[Computer]</li>
                 <li><strong>Experience</strong> : 6 Years</li>
                 <li><strong>Course Taught</strong> : Web Designing</li>
-                <li onclick="window.location.href='mailto:bade.kranti@siesgst.ac.in'"><strong>Email Id</strong> : <br>bade.kranti@siesgst.ac.in</li>
+                <li onclick="window.location.href='mailto:bade.kranti@siesgst.ac.in'"><strong>Email Id</strong> :
+                  <br>bade.kranti@siesgst.ac.in</li>
               </ul>
             </div>
           </div>
@@ -410,14 +579,15 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">Namrata<br>Patel</figcaption>
               </figure>
             </div>
-        
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
                 <li><strong>Qualification</strong> : M.E.[Computer]</li>
                 <li><strong>Experience</strong> : 7 Years</li>
                 <li><strong>Course Taught</strong> : Web Designing</li>
-                <li onclick="window.location.href='mailto:namrata.patel@siesgst.ac.in'"><strong>Email Id</strong> : <br>namrata.patel@siesgst.ac.in</li>
+                <li onclick="window.location.href='mailto:namrata.patel@siesgst.ac.in'"><strong>Email Id</strong> :
+                  <br>namrata.patel@siesgst.ac.in</li>
               </ul>
             </div>
           </div>
@@ -434,14 +604,15 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">Preksha<br>Rathod</figcaption>
               </figure>
             </div>
-        
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
                 <li><strong>Qualification</strong> : 12 Pass</li>
                 <li><strong>Experience</strong> : 2 Years</li>
                 <li><strong>Course Taught</strong> : Sewing and Tailoring</li>
-                <li onclick="window.location.href='mailto:preksharathod17@gmail.com'"><strong>Email Id</strong> : <br>preksharathod17@gmail.com</li>
+                <li onclick="window.location.href='mailto:preksharathod17@gmail.com'"><strong>Email Id</strong> :
+                  <br>preksharathod17@gmail.com</li>
               </ul>
             </div>
           </div>
@@ -458,14 +629,15 @@
                 <figcaption class="faculty-box__sub--box__profile-image--name">New<br>Faculty</figcaption>
               </figure>
             </div>
-        
+
             <!-- INFO -->
             <div class="faculty-box__sub--box__faculty-info">
               <ul class="faculty-box__sub--box__faculty-info--modifier">
                 <li><strong>Qualification</strong> : XYZXYZ</li>
                 <li><strong>Experience</strong> : XY Years</li>
                 <li><strong>Course Taught</strong> : XYZXYZXYZ</li>
-                <li onclick="window.location.href='mailto:abcdef17@gmail.com'"><strong>Email Id</strong> : <br>abcdef17@gmail.com</li>
+                <li onclick="window.location.href='mailto:abcdef17@gmail.com'"><strong>Email Id</strong> :
+                  <br>abcdef17@gmail.com</li>
               </ul>
             </div>
           </div>
@@ -486,8 +658,8 @@
       <!-- COURSE [PART-1] -->
       <div class="course-main">
         <!-- COURSE-1 -->
-      <div class="course-main__box">
-          
+        <div class="course-main__box">
+
           <!-- UPPER-PART [IMAGE AND TITLE] -->
           <div class="course-main__box__upper-part">
 
@@ -503,211 +675,216 @@
             </div>
 
             <!-- LOWER-PART [DETAILS] -->
-          <div class="course-main__box__lower-part">
-            <ul class="course-main__box__lower-part--details">
-              <li class="course-main__box__lower-part--details--modifier">Detail 1</li>
-              <li class="course-main__box__lower-part--details--modifier">Detail 2</li>
-              <li class="course-main__box__lower-part--details--modifier">Detail 3</li>
-              <li class="course-main__box__lower-part--details--modifier">Detail 4</li>
-              <li class="course-main__box__lower-part--details--modifier">Detail 5</li>
-            </ul>
+            <div class="course-main__box__lower-part">
+              <ul class="course-main__box__lower-part--details">
+                <li class="course-main__box__lower-part--details--modifier">Detail 1</li>
+                <li class="course-main__box__lower-part--details--modifier">Detail 2</li>
+                <li class="course-main__box__lower-part--details--modifier">Detail 3</li>
+                <li class="course-main__box__lower-part--details--modifier">Detail 4</li>
+                <li class="course-main__box__lower-part--details--modifier">Detail 5</li>
+              </ul>
 
-            <div class="course-main__box__lower-part--btn">
-              <a href="#" class="btn-course">
-                More Info
-              </a>
+              <div class="course-main__box__lower-part--btn">
+                <a href="#" class="btn-course">
+                  More Info
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COURSE-2 -->
+        <div class="course-main__box">
+
+          <!-- UPPER-PART [IMAGE AND TITLE] -->
+          <div class="course-main__box__upper-part">
+
+            <!-- IMAGE -->
+            <div class="course-main__box__upper-part--image  picture-2">
+              <!-- TITLE -->
+              <h4 class="course-main__box__upper-part--title">
+                <span class="course-main__box__upper-part--title--span">
+                  Web Dev
+                </span>
+              </h4>
+              &nbsp;
+            </div>
+
+            <!-- LOWER-PART [DETAILS] -->
+            <div class="course-main__box__lower-part">
+              <ul class="course-main__box__lower-part--details">
+                <li class="course-main__box__lower-part--details--modifier">Web Design Principles</li>
+                <li class="course-main__box__lower-part--details--modifier">Basics in Web Design</li>
+                <li class="course-main__box__lower-part--details--modifier">Introduction to HTML</li>
+                <li class="course-main__box__lower-part--details--modifier">Elements of HTML</li>
+                <li class="course-main__box__lower-part--details--modifier">Introduction to CSS and more</li>
+              </ul>
+
+              <div class="course-main__box__lower-part--btn">
+                <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Web-Dev_ulylb1.pdf"
+                  target="_self" class="btn-course">
+                  More Info
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- COURSE-2 -->
-      <div class="course-main__box">
-      
-        <!-- UPPER-PART [IMAGE AND TITLE] -->
-        <div class="course-main__box__upper-part">
-      
-          <!-- IMAGE -->
-          <div class="course-main__box__upper-part--image  picture-2">
-            <!-- TITLE -->
-            <h4 class="course-main__box__upper-part--title">
-              <span class="course-main__box__upper-part--title--span">
-               Web Dev
-              </span>
-            </h4>
-            &nbsp;
-          </div>
-      
-          <!-- LOWER-PART [DETAILS] -->
-          <div class="course-main__box__lower-part">
-            <ul class="course-main__box__lower-part--details">
-              <li class="course-main__box__lower-part--details--modifier">Web Design Principles</li>
-              <li class="course-main__box__lower-part--details--modifier">Basics in Web Design</li>
-              <li class="course-main__box__lower-part--details--modifier">Introduction to HTML</li>
-              <li class="course-main__box__lower-part--details--modifier">Elements of HTML</li>
-              <li class="course-main__box__lower-part--details--modifier">Introduction to CSS and more</li>
-            </ul>
-      
-            <div class="course-main__box__lower-part--btn">
-              <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Web-Dev_ulylb1.pdf" target="_self" class="btn-course">
-                More Info
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <!-- COURSE [PART-2] -->
+      <div class="course-main">
+        <!-- COURSE-3 -->
+        <div class="course-main__box">
 
-    <!-- COURSE [PART-2] -->
-    <div class="course-main">
-      <!-- COURSE-3 -->
-      <div class="course-main__box">
-      
-        <!-- UPPER-PART [IMAGE AND TITLE] -->
-        <div class="course-main__box__upper-part">
-      
-          <!-- IMAGE -->
-          <div class="course-main__box__upper-part--image  picture-3">
-            <!-- TITLE -->
-            <h4 class="course-main__box__upper-part--title">
-              <span class="course-main__box__upper-part--title--span">
-                Welding
-              </span>
-            </h4>
-            &nbsp;
-          </div>
-      
-          <!-- LOWER-PART [DETAILS] -->
-          <div class="course-main__box__lower-part">
-            <ul class="course-main__box__lower-part--details">
-              <li class="course-main__box__lower-part--details--modifier">Introduction</li>
-              <li class="course-main__box__lower-part--details--modifier">Electrical aspects in welding</li>
-              <li class="course-main__box__lower-part--details--modifier">Welding machine</li>
-              <li class="course-main__box__lower-part--details--modifier">Welding Positions</li>
-              <li class="course-main__box__lower-part--details--modifier">Nomenclature of welding joints</li>
-            </ul>
-      
-            <div class="course-main__box__lower-part--btn">
-              <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Welding_nb1nsw.pdf" target="_self" class="btn-course">
-                More Info
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+          <!-- UPPER-PART [IMAGE AND TITLE] -->
+          <div class="course-main__box__upper-part">
 
-      <!-- COURSE-4 -->
-      <div class="course-main__box">
-      
-        <!-- UPPER-PART [IMAGE AND TITLE] -->
-        <div class="course-main__box__upper-part">
-      
-          <!-- IMAGE -->
-          <div class="course-main__box__upper-part--image  picture-4">
-            <!-- TITLE -->
-            <h4 class="course-main__box__upper-part--title">
-              <span class="course-main__box__upper-part--title--span">
-                Sweaing
-              </span>
-            </h4>
-            &nbsp;
+            <!-- IMAGE -->
+            <div class="course-main__box__upper-part--image  picture-3">
+              <!-- TITLE -->
+              <h4 class="course-main__box__upper-part--title">
+                <span class="course-main__box__upper-part--title--span">
+                  Welding
+                </span>
+              </h4>
+              &nbsp;
+            </div>
+
+            <!-- LOWER-PART [DETAILS] -->
+            <div class="course-main__box__lower-part">
+              <ul class="course-main__box__lower-part--details">
+                <li class="course-main__box__lower-part--details--modifier">Introduction</li>
+                <li class="course-main__box__lower-part--details--modifier">Electrical aspects in welding</li>
+                <li class="course-main__box__lower-part--details--modifier">Welding machine</li>
+                <li class="course-main__box__lower-part--details--modifier">Welding Positions</li>
+                <li class="course-main__box__lower-part--details--modifier">Nomenclature of welding joints</li>
+              </ul>
+
+              <div class="course-main__box__lower-part--btn">
+                <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Welding_nb1nsw.pdf"
+                  target="_self" class="btn-course">
+                  More Info
+                </a>
+              </div>
+            </div>
           </div>
-      
-          <!-- LOWER-PART [DETAILS] -->
-          <div class="course-main__box__lower-part">
-            <ul class="course-main__box__lower-part--details">
-              <li class="course-main__box__lower-part--details--modifier">Introduction to sewing machine</li>
-              <li class="course-main__box__lower-part--details--modifier">Tools and equipment used in tailoring</li>
-              <li class="course-main__box__lower-part--details--modifier">Trade Terminology</li>
-              <li class="course-main__box__lower-part--details--modifier">Measurement taking</li>
-              <li class="course-main__box__lower-part--details--modifier">Drafting and pattern making and more</li>
-            </ul>
-      
-            <div class="course-main__box__lower-part--btn">
-              <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Sewing_fdbsyk.pdf" target="_self" class="btn-course">
-                More Info
-              </a>
+        </div>
+
+        <!-- COURSE-4 -->
+        <div class="course-main__box">
+
+          <!-- UPPER-PART [IMAGE AND TITLE] -->
+          <div class="course-main__box__upper-part">
+
+            <!-- IMAGE -->
+            <div class="course-main__box__upper-part--image  picture-4">
+              <!-- TITLE -->
+              <h4 class="course-main__box__upper-part--title">
+                <span class="course-main__box__upper-part--title--span">
+                  Sweaing
+                </span>
+              </h4>
+              &nbsp;
+            </div>
+
+            <!-- LOWER-PART [DETAILS] -->
+            <div class="course-main__box__lower-part">
+              <ul class="course-main__box__lower-part--details">
+                <li class="course-main__box__lower-part--details--modifier">Introduction to sewing machine</li>
+                <li class="course-main__box__lower-part--details--modifier">Tools and equipment used in tailoring</li>
+                <li class="course-main__box__lower-part--details--modifier">Trade Terminology</li>
+                <li class="course-main__box__lower-part--details--modifier">Measurement taking</li>
+                <li class="course-main__box__lower-part--details--modifier">Drafting and pattern making and more</li>
+              </ul>
+
+              <div class="course-main__box__lower-part--btn">
+                <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Sewing_fdbsyk.pdf"
+                  target="_self" class="btn-course">
+                  More Info
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-    <!-- COURSE [PART-3] -->
-    <div class="course-main">
-      <!-- COURSE-5 -->
-      <div class="course-main__box">
-      
-        <!-- UPPER-PART [IMAGE AND TITLE] -->
-        <div class="course-main__box__upper-part">
-      
-          <!-- IMAGE -->
-          <div class="course-main__box__upper-part--image  picture-5">
-            <!-- TITLE -->
-            <h4 class="course-main__box__upper-part--title">
-              <span class="course-main__box__upper-part--title--span">
-                Computer Operator
-              </span>
-            </h4>
-            &nbsp;
+      <!-- COURSE [PART-3] -->
+      <div class="course-main">
+        <!-- COURSE-5 -->
+        <div class="course-main__box">
+
+          <!-- UPPER-PART [IMAGE AND TITLE] -->
+          <div class="course-main__box__upper-part">
+
+            <!-- IMAGE -->
+            <div class="course-main__box__upper-part--image  picture-5">
+              <!-- TITLE -->
+              <h4 class="course-main__box__upper-part--title">
+                <span class="course-main__box__upper-part--title--span">
+                  Computer Operator
+                </span>
+              </h4>
+              &nbsp;
+            </div>
+
+            <!-- LOWER-PART [DETAILS] -->
+            <div class="course-main__box__lower-part">
+              <ul class="course-main__box__lower-part--details">
+                <li class="course-main__box__lower-part--details--modifier">Detail 1</li>
+                <li class="course-main__box__lower-part--details--modifier">Detail 2</li>
+                <li class="course-main__box__lower-part--details--modifier">Detail 3</li>
+                <li class="course-main__box__lower-part--details--modifier">Detail 4</li>
+                <li class="course-main__box__lower-part--details--modifier">Detail 5</li>
+              </ul>
+
+              <div class="course-main__box__lower-part--btn">
+                <a href="#" class="btn-course">
+                  More Info
+                </a>
+              </div>
+            </div>
           </div>
-      
-          <!-- LOWER-PART [DETAILS] -->
-          <div class="course-main__box__lower-part">
-            <ul class="course-main__box__lower-part--details">
-              <li class="course-main__box__lower-part--details--modifier">Detail 1</li>
-              <li class="course-main__box__lower-part--details--modifier">Detail 2</li>
-              <li class="course-main__box__lower-part--details--modifier">Detail 3</li>
-              <li class="course-main__box__lower-part--details--modifier">Detail 4</li>
-              <li class="course-main__box__lower-part--details--modifier">Detail 5</li>
-            </ul>
-      
-            <div class="course-main__box__lower-part--btn">
-              <a href="#" class="btn-course">
-                More Info
-              </a>
+        </div>
+
+        <!-- COURSE-6 -->
+        <div class="course-main__box">
+
+          <!-- UPPER-PART [IMAGE AND TITLE] -->
+          <div class="course-main__box__upper-part">
+
+            <!-- IMAGE -->
+            <div class="course-main__box__upper-part--image  picture-8">
+              <!-- TITLE -->
+              <h4 class="course-main__box__upper-part--title">
+                <span class="course-main__box__upper-part--title--span">
+                  Plumbing
+                </span>
+              </h4>
+              &nbsp;
+            </div>
+
+            <!-- LOWER-PART [DETAILS] -->
+            <div class="course-main__box__lower-part">
+              <ul class="course-main__box__lower-part--details">
+                <li class="course-main__box__lower-part--details--modifier">Introduction</li>
+                <li class="course-main__box__lower-part--details--modifier">Plumbing tools</li>
+                <li class="course-main__box__lower-part--details--modifier">Introduction of pipes & fittings</li>
+                <li class="course-main__box__lower-part--details--modifier">Fixing of G.I pipes and fittings</li>
+                <li class="course-main__box__lower-part--details--modifier">Fixing of PVC pipes and fittings and more
+                </li>
+              </ul>
+
+              <div class="course-main__box__lower-part--btn">
+                <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Plumbing_skt3th.pdf"
+                  target="_self" class="btn-course">
+                  More Info
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
-      <!-- COURSE-6 -->
-      <div class="course-main__box">
-      
-        <!-- UPPER-PART [IMAGE AND TITLE] -->
-        <div class="course-main__box__upper-part">
-      
-          <!-- IMAGE -->
-          <div class="course-main__box__upper-part--image  picture-8">
-            <!-- TITLE -->
-            <h4 class="course-main__box__upper-part--title">
-              <span class="course-main__box__upper-part--title--span">
-                Plumbing
-              </span>
-            </h4>
-            &nbsp;
-          </div>
-      
-          <!-- LOWER-PART [DETAILS] -->
-          <div class="course-main__box__lower-part">
-            <ul class="course-main__box__lower-part--details">
-              <li class="course-main__box__lower-part--details--modifier">Introduction</li>
-              <li class="course-main__box__lower-part--details--modifier">Plumbing tools</li>
-              <li class="course-main__box__lower-part--details--modifier">Introduction of pipes & fittings</li>
-              <li class="course-main__box__lower-part--details--modifier">Fixing of G.I pipes and fittings</li>
-              <li class="course-main__box__lower-part--details--modifier">Fixing of PVC pipes and fittings and more</li>
-            </ul>
-      
-            <div class="course-main__box__lower-part--btn">
-              <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Plumbing_skt3th.pdf" target="_self" class="btn-course">
-                More Info
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
 
     <!-- ===============================================================================================================================================================================   -->
@@ -722,20 +899,22 @@
       <!-- LOGIN/SIGN-IN/PROCEDURE OPTIONS -->
       <div class="enrolling-option">
         <div class="enrolling-option__sign-in">
-          <a href="https://forms.gle/LQBtLGKhY6MkwH8W7" class="btn-enroll btn-enroll--signup btn-enroll--white" target="_blank">
+          <a href="https://forms.gle/LQBtLGKhY6MkwH8W7" class="btn-enroll btn-enroll--signup btn-enroll--white"
+            target="_blank">
             Registration
           </a>
         </div>
 
         <div class="enrolling-option__login">
-          <a href="Login.html" class="btn-enroll btn-enroll--login btn-enroll--white" target="_blank">
-            Enroll
+          <a href="https://forms.gle/UDG8i53aoXepkewM6" class="btn-enroll btn-enroll--login btn-enroll--white"
+            target="_blank">
+            Course Confirmation
           </a>
         </div>
 
         <div class="enrolling-option__procedure">
-          <a href="#procedure-popup" class="btn-enroll btn-enroll--procedure btn-enroll--white">
-            Task Assignment
+          <a href="https://forms.gle/nr3NmcnT2FCU2yyC7" class="btn-enroll btn-enroll--procedure btn-enroll--white">
+            Certificate
           </a>
         </div>
       </div>
@@ -776,7 +955,7 @@
               aliquet lectus proin nibh nisl condimentum id. In hac habitasse platea dictumst vestibulum rhoncus est
               pellentesque.
               Tincidunt augue interdum velit euismod in pellentesque massa placerat duis.
-            
+
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna
               aliqua. Eu volutpat odio facilisis mauris sit amet. Faucibus purus in massa tempor nec feugiat nisl
@@ -798,7 +977,7 @@
 
   <!-- End of the main section -->
   <!-- ===============================================================================================================================================================================   -->
-  
+
   <!-- Footer Section -->
 
   <footer class="footer" id="CONTACT">
@@ -808,8 +987,8 @@
       </h2>
     </div>
     <!-- FOOTER MAIN -->
-   <div class="footer__main">
-     <!-- MAP IFRAME -->
+    <div class="footer__main">
+      <!-- MAP IFRAME -->
       <div class="footer__map-box">
         <div class="footer__map">
           <iframe class="footer__siesgst-map"
@@ -838,19 +1017,21 @@
             </ul>
           </div>
         </div>
-      
+
         <div class="footer__copyright">
           <p class="footer__copyright--data">
-            Built by <strong><a href="https://github.com/SP-2605" class="footer__link" target="_blank">Suriya Prasath.S</a></strong>. Copyright &copy; by SIESGST.
+            Built by <strong><a href="https://github.com/SP-2605" class="footer__link" target="_blank">Suriya
+                Prasath.S</a></strong>. Copyright &copy; by SIESGST.
             It is strictly
-            prohibited to use this website for personal or commercial use.Lorem ipsum dolor sit amet, consectetur adipiscing
+            prohibited to use this website for personal or commercial use.Lorem ipsum dolor sit amet, consectetur
+            adipiscing
             elit,
             sed do eiusmod tempor incididunt ut labore et.
           </p>
         </div>
-        
+
       </div>
-   </div>
+    </div>
   </footer>
 
   <!-- LOADER -->
@@ -861,9 +1042,11 @@
   });
 </script> -->
 
-<!-- JS Source File -->
-<script src="index.js"></script>
-
+  <!-- JS Source File -->
+  <script src="index.js"></script>
+  <!-- Glide JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 </body>
 
 </html>

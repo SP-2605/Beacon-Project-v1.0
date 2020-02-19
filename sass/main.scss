@@ -12,6 +12,8 @@
 @import "components/faculty-box";
 @import "components/popup";
 @import "components/enroll-elements";
+@import "components/flash-news";
+@import "components/gallery";
 
 @import "layout/footer";
 @import "layout/grids";
@@ -20,3 +22,8 @@
 
 @import "pages/home";
 
+// GLIDE.JS
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";

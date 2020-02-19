@@ -1,0 +1,26 @@
+.carousel-box{
+
+    &__img{
+        height: 80%;
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        overflow: hidden;
+        border-radius: 5px;
+    }
+}
+
+.glide1{
+    position: relative;
+
+    &__bullets{
+        position: absolute;
+        z-index: 2;
+        bottom: 2em;
+        left: 50%;
+        display: inline-flex;
+        list-style: none;
+        transform: translateX(-50%);
+    }
+}
