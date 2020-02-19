@@ -31,6 +31,10 @@
     padding: 10rem 0;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-backdrop-attachment: fixed;
+    -webkit-background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),
+    url("https://res.cloudinary.com/dkdmgncru/image/upload/v1582147910/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/News_updates_bpsooe.jpg");
+    scroll-behavior: smooth;
 }
 
 
