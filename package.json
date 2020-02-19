@@ -19,6 +19,7 @@
     "postcss-cli": "^7.1.0"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "aos": "^2.3.4",
     "javascript": "^1.0.0",
     "jquery": "^3.4.1"
