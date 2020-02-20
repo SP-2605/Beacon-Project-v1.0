@@ -27,6 +27,19 @@ $(document).ready(function(){
         autoplay: true,
         autoplay: 4000,
         animationDuration:2000,
+
+        breakpoints: {
+
+            1600: {
+                gap: 2,
+                perView: 2,
+                peek: {
+                    before: 10,
+                    after: 10,
+                }
+            },
+
+        }
     }
     new Glide(".glide", config).mount()
 })
@@ -37,6 +50,40 @@ $(document).ready(function(){
         autoplay: true,
         autoplay: 3000,
         animationDuration: 2500,
+
+        breakpoints: {
+
+            1600: {
+                gap: 5,
+                perView: 2,
+            },
+
+            1200: {
+                gap: 5,
+                perView: 1,
+                peek: {
+                    before:10,
+                    after: 10,
+                },
+            },
+
+            900: {
+                perView: 1,
+                peek: {
+                    before:20,
+                    after: 20,
+                },
+            },
+
+            500: {
+                perView: 1,
+                peek: {
+                    before: 30,
+                    after: 30,
+                },
+            },
+
+        }
     }
     new Glide(".glide1", config).mount()
 })

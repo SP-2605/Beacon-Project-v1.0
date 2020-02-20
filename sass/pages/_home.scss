@@ -27,14 +27,29 @@
 
 .flash-news{
     background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),
-    url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582147910/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/News_updates_bpsooe.jpg");
+    url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582154425/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/News_Updates_qcbcam.jpg");
     padding: 10rem 0;
     background-size: cover;
     background-attachment: fixed;
-    -webkit-backdrop-attachment: fixed;
-    -webkit-background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),
-    url("https://res.cloudinary.com/dkdmgncru/image/upload/v1582147910/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/News_updates_bpsooe.jpg");
-    scroll-behavior: smooth;
+
+    @include respond(bp-10){
+        padding: 5rem 0;
+    }
+
+    @include respond(bp-7){
+        // transform: skewY(-7deg);
+        padding: 10rem 0rem;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+        background-size: cover;
+        // & > *{
+            // transform: skewY(7deg);
+        // }
+    }
+
+    @media only screen and (max-width:25.880em) {
+        background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
+    }
 }
 
 
@@ -42,6 +57,21 @@
     background-color: $color-white-2;
     scroll-behavior: smooth;
     padding: 10rem 0;
+
+    @include respond(bp-10){
+        padding: 5rem 0;
+    }
+
+    @include respond(bp-7){
+        // transform: skewY(-7deg);
+        padding: 10rem 0rem;
+        background-attachment: scroll;
+        -webkit-background-attachment: scroll;
+        background-size: cover;
+        // & > *{
+            // transform: skewY(7deg);
+        // }
+    }
 }
 
 
@@ -68,24 +98,24 @@
     }
 
     @include respond(bp-7){
-        transform: skewY(-7deg);
+        // transform: skewY(-7deg);
         padding: 10rem 0rem;
         background-attachment: scroll;
         -webkit-background-attachment: scroll;
         background-size: cover;
-        & > *{
-            transform: skewY(7deg);
-        }
+        // & > *{
+            // transform: skewY(7deg);
+        // }
     }
 
     @include respond(bp-5){
         padding: 10rem 0rem;
     }
 
-     @media only screen and (max-width:25.880em) {
-        padding: 7rem 0rem;
-        background-image: linear-gradient(to right bottom, $color-secondary-dark, $color-secondary-2);
-    }
+    @media only screen and (max-width:25.880em) {
+    padding: 7rem 0rem;
+    background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
+}
 
 
     @media only screen and (max-width:22.5em) {
@@ -140,6 +170,7 @@
     backface-visibility: hidden;            //FOR PROVIDING HARDWARE ACCELERATION WHILE SCROLLING
     scroll-behavior: smooth;
     padding: 15rem 0rem;
+    z-index: 5;
 
     @include respond(bp-12){
         padding: 12rem 0rem;
@@ -154,15 +185,15 @@
     }
 
     @include respond(bp-7) {
-        transform: skewY(-7deg);
+        // transform: skewY(-7deg);
         padding: 7rem 0rem;
-        height: 50vh;
+        // height: 50vh;
         background-attachment: scroll;
         -webkit-background-attachment: scroll;
 
-        &>* {
-            transform: skewY(7deg);
-        }
+        // &>* {
+            // transform: skewY(7deg);
+        // }
     }
 
     @include respond(bp-6){
@@ -171,6 +202,10 @@
 
     @include respond(bp-5){
         padding: 8rem 0rem 18rem 0rem;
+    }
+
+    @media only screen and (max-width:25.880em) {
+        background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
     }
 
 

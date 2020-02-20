@@ -12,6 +12,10 @@
          align-content: center;
          width: 50vw;
 
+         @include respond(bp-11){
+             width: 100%;
+         }
+
          &__marquee {
              height: 40vh;
              text-align: center;
@@ -26,7 +30,15 @@
              font-size: 3rem;
              text-decoration: none;
              text-transform: uppercase;
-             margin: 3rem;
+
+             @include respond(bp-12){
+                font-size: 2.3rem;
+             }
+
+             @include respond(bp-11) {
+                 font-size: 2rem;
+             }
+
 
          }
 
@@ -34,7 +46,15 @@
              list-style: none;
 
              &:not(:last-child) {
-                 margin-bottom: 3rem;
+                 margin-bottom: 3.5rem;
+
+                 @include respond(bp-12){
+                     margin-bottom: 2rem;
+                 }
+
+                 @include respond(bp-11){
+                     margin-bottom: 2rem;
+                 }
              }
          }
 
@@ -43,12 +63,29 @@
     &__batch-pics{
         width: 45vw;
 
+        @include respond(bp-11){
+            width: 0vw;
+        }
+
         &--modifier{
             height: 100%;
             width: 100%;
-            z-index: 20;
             border-radius: 5px;
             overflow: hidden;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include respond(bp-12){
+                width: 95%;
+            }
+
+            @include respond(bp-11) {
+                display: none;
+                visibility: hidden;
+                height: 0;
+                width: 0;
+            }
         }
     }
 }

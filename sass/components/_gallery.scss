@@ -8,6 +8,15 @@
         transform: translate(-50%);
         overflow: hidden;
         border-radius: 5px;
+
+        @include respond(bp-12){
+            width: 95%;
+        }
+
+        @include respond(bp-11) {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
@@ -22,5 +31,10 @@
         display: inline-flex;
         list-style: none;
         transform: translateX(-50%);
+
+        @include respond(bp-5){
+            display: none;
+            visibility: hidden;
+        }
     }
 }

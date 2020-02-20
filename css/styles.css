@@ -1771,6 +1771,9 @@ body {
     flex-direction: column;
     align-content: center;
     width: 50vw; }
+    @media only screen and (max-width: 75em) {
+      .flash-news-box__updates {
+        width: 100%; } }
     .flash-news-box__updates__marquee {
       height: 40vh;
       text-align: center;
@@ -1782,20 +1785,45 @@ body {
       font-weight: 600;
       font-size: 3rem;
       text-decoration: none;
-      text-transform: uppercase;
-      margin: 3rem; }
+      text-transform: uppercase; }
+      @media only screen and (min-width: 81.25em) and (max-width: 100em) {
+        .flash-news-box__updates__flash-text {
+          font-size: 2.3rem; } }
+      @media only screen and (max-width: 75em) {
+        .flash-news-box__updates__flash-text {
+          font-size: 2rem; } }
     .flash-news-box__updates__list {
       list-style: none; }
       .flash-news-box__updates__list:not(:last-child) {
-        margin-bottom: 3rem; }
+        margin-bottom: 3.5rem; }
+        @media only screen and (min-width: 81.25em) and (max-width: 100em) {
+          .flash-news-box__updates__list:not(:last-child) {
+            margin-bottom: 2rem; } }
+        @media only screen and (max-width: 75em) {
+          .flash-news-box__updates__list:not(:last-child) {
+            margin-bottom: 2rem; } }
   .flash-news-box__batch-pics {
     width: 45vw; }
+    @media only screen and (max-width: 75em) {
+      .flash-news-box__batch-pics {
+        width: 0vw; } }
     .flash-news-box__batch-pics--modifier {
       height: 100%;
       width: 100%;
-      z-index: 20;
       border-radius: 5px;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%); }
+      @media only screen and (min-width: 81.25em) and (max-width: 100em) {
+        .flash-news-box__batch-pics--modifier {
+          width: 95%; } }
+      @media only screen and (max-width: 75em) {
+        .flash-news-box__batch-pics--modifier {
+          display: none;
+          visibility: hidden;
+          height: 0;
+          width: 0; } }
 
 .carousel-box__img {
   height: 80%;
@@ -1805,6 +1833,13 @@ body {
   transform: translate(-50%);
   overflow: hidden;
   border-radius: 5px; }
+  @media only screen and (min-width: 81.25em) and (max-width: 100em) {
+    .carousel-box__img {
+      width: 95%; } }
+  @media only screen and (max-width: 75em) {
+    .carousel-box__img {
+      width: 100%;
+      height: 100%; } }
 
 .glide1 {
   position: relative; }
@@ -1816,6 +1851,10 @@ body {
     display: inline-flex;
     list-style: none;
     transform: translateX(-50%); }
+    @media only screen and (max-width: 31.25em) {
+      .glide1__bullets {
+        display: none;
+        visibility: hidden; } }
 
 .footer {
   background-color: #333;
@@ -1830,10 +1869,11 @@ body {
       margin-top: -5rem; } }
   @media only screen and (max-width: 37.5em) {
     .footer {
-      padding: 13rem 0rem 5rem 0rem; } }
-  @media only screen and (max-width: 22.5em) {
+      padding: 5rem 0rem 5rem 0rem; } }
+  @media only screen and (max-width: 25.875em) {
     .footer {
-      padding: 10rem 0rem 5rem 0rem; } }
+      padding: 5rem 0rem;
+      margin-top: 0; } }
   .footer__main {
     display: flex;
     flex-direction: row;
@@ -2169,7 +2209,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #ff7830d5, #ffbb00d5), url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574945458/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Main-page_ejdnsn.jpg");
+  background-image: linear-gradient(to right bottom, #ff7830d5, #ffbb00d5), url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582154277/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Main_page_qfceb5.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -2181,15 +2221,9 @@ body {
       -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0); } }
   @media only screen and (max-width: 43.75em) {
     .header {
-      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+      clip-path: none;
       background-attachment: scroll;
       -webkit-background-attachment: scroll; } }
-  @media only screen and (max-width: 37.5em) {
-    .header {
-      clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%); } }
-  @media only screen and (max-width: 25.875em) {
-    .header {
-      clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%); } }
   .header__google-translate {
     position: absolute;
     left: 15rem;
@@ -2262,15 +2296,36 @@ body {
       padding: 3rem 0rem; } }
 
 .flash-news {
-  background-image: linear-gradient(to right bottom, #ff7830d5, #ffbb00d5), url("../../News & updates.jpg");
+  background-image: linear-gradient(to right bottom, #ff7830d5, #ffbb00d5), url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582154425/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/News_Updates_qcbcam.jpg");
   padding: 10rem 0;
   background-size: cover;
   background-attachment: fixed; }
+  @media only screen and (max-width: 68.75em) {
+    .flash-news {
+      padding: 5rem 0; } }
+  @media only screen and (max-width: 43.75em) {
+    .flash-news {
+      padding: 10rem 0rem;
+      background-attachment: scroll;
+      -webkit-background-attachment: scroll;
+      background-size: cover; } }
+  @media only screen and (max-width: 25.88em) {
+    .flash-news {
+      background-image: linear-gradient(to right bottom, #ff7830d5, #ffbb00d5); } }
 
 .gallery {
   background-color: #eee;
   scroll-behavior: smooth;
   padding: 10rem 0; }
+  @media only screen and (max-width: 68.75em) {
+    .gallery {
+      padding: 5rem 0; } }
+  @media only screen and (max-width: 43.75em) {
+    .gallery {
+      padding: 10rem 0rem;
+      background-attachment: scroll;
+      -webkit-background-attachment: scroll;
+      background-size: cover; } }
 
 .faculty-section {
   background-image: linear-gradient(to right bottom, #ff7830d5, #ffbb00d5), url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574930796/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-3_bqtr9h.jpg");
@@ -2291,20 +2346,17 @@ body {
       padding: 5rem 0rem; } }
   @media only screen and (max-width: 43.75em) {
     .faculty-section {
-      transform: skewY(-7deg);
       padding: 10rem 0rem;
       background-attachment: scroll;
       -webkit-background-attachment: scroll;
-      background-size: cover; }
-      .faculty-section > * {
-        transform: skewY(7deg); } }
+      background-size: cover; } }
   @media only screen and (max-width: 31.25em) {
     .faculty-section {
       padding: 10rem 0rem; } }
   @media only screen and (max-width: 25.88em) {
     .faculty-section {
       padding: 7rem 0rem;
-      background-image: linear-gradient(to right bottom, #ff7730, #ffa726); } }
+      background-image: linear-gradient(to right bottom, #ff7830d5, #ffbb00d5); } }
   @media only screen and (max-width: 22.5em) {
     .faculty-section {
       padding: 7rem 0rem; } }
@@ -2343,7 +2395,8 @@ body {
   background-attachment: fixed;
   backface-visibility: hidden;
   scroll-behavior: smooth;
-  padding: 15rem 0rem; }
+  padding: 15rem 0rem;
+  z-index: 5; }
   @media only screen and (min-width: 81.25em) and (max-width: 100em) {
     .enroll-section {
       padding: 12rem 0rem; } }
@@ -2355,19 +2408,18 @@ body {
       padding: 5rem 0rem; } }
   @media only screen and (max-width: 43.75em) {
     .enroll-section {
-      transform: skewY(-7deg);
       padding: 7rem 0rem;
-      height: 50vh;
       background-attachment: scroll;
-      -webkit-background-attachment: scroll; }
-      .enroll-section > * {
-        transform: skewY(7deg); } }
+      -webkit-background-attachment: scroll; } }
   @media only screen and (max-width: 37.5em) {
     .enroll-section {
       padding: 10rem 0rem 17rem 0rem; } }
   @media only screen and (max-width: 31.25em) {
     .enroll-section {
       padding: 8rem 0rem 18rem 0rem; } }
+  @media only screen and (max-width: 25.88em) {
+    .enroll-section {
+      background-image: linear-gradient(to right bottom, #ff7830d5, #ffbb00d5); } }
   .enroll-section input[type=number]::-webkit-inner-spin-button,
   .enroll-section input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
