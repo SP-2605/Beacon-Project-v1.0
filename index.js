@@ -88,6 +88,7 @@ $(document).ready(function(){
     new Glide(".glide1", config).mount()
 })
 
+
 //IMAGE OPTIMIZER
 $(document).ready(function () {
     

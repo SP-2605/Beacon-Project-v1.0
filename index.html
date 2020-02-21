@@ -174,22 +174,19 @@
 
       <div class="flash-news-box">
         <div class="flash-news-box__updates">
-          <marquee class="flash-news-box__updates__marquee" behavior="" direction="up">
-            <ul>
-              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="#">About
-                  Principal</a></li>
-              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="#">About
-                  SIESGST</a></li>
-              <li class="flash-news-box__updates__list"> <a class="flash-news-box__updates__flash-text"
-                  href="#">Admission
-                  For Jan-july 2020</a></li>
-              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="#">ISR
-                  Beacon
-                  Coordinator</a></li>
-              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text"
-                  href="#">Certified
-                  students[June-Dec 2019]</a></li>
+          <marquee id="flashNews" class="flash-news-box__updates__marquee" direction="up">
+           <div onmouseover="document.getElementById('flashNews').stop();" onmouseout="document.getElementById('flashNews').start()">
+             <ul>
+              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="#">The Principal</a></li>
+              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="http://www.siesgst.edu.in/" target="_self">About SIESGST</a></li>
+              <li class="flash-news-box__updates__list"> <a class="flash-news-box__updates__flash-text" href="#">ISR Beacon Coordinator</a></li>
+              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="https://res.cloudinary.com/dkdmgncru/image/upload/v1582274435/Beacon%20Files/PDF%27s/Statistics_wukct3.pdf" target="_blank">Statistics of Previous Batches</a></li>
+              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="https://res.cloudinary.com/dkdmgncru/image/upload/v1582277544/Beacon%20Files/PDF%27s/Certified_Students_hgvto1.pdf" target="_blank">Certified students [Batch:July-2019]</a></li>
+              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="https://res.cloudinary.com/dkdmgncru/image/upload/v1582266637/Beacon%20Files/PDF%27s/Time-Table_duqlsc.pdf" target="_blank">ISR Time-Table [2020]</a></li>
+              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="https://res.cloudinary.com/dkdmgncru/image/upload/v1582272483/Beacon%20Files/PDF%27s/Trainers-List_oiveut.pdf" target="_blank">Beacon Trainers</a></li>
+              <li class="flash-news-box__updates__list"><a class="flash-news-box__updates__flash-text" href="https://res.cloudinary.com/dkdmgncru/image/upload/v1582280114/Beacon%20Files/PDF%27s/List_Of_2020_Batch_fcyyxm.pdf" target="_blank">Eligible students for the year 2020</a></li>
             </ul>
+           </div>
           </marquee>
         </div>
 
@@ -707,7 +704,7 @@
 
               <div class="course-main__box__lower-part--btn">
                 <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Web-Dev_ulylb1.pdf"
-                  target="_self" class="btn-course">
+                  target="_blank" class="btn-course">
                   More Info
                 </a>
               </div>
@@ -747,7 +744,7 @@
 
               <div class="course-main__box__lower-part--btn">
                 <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Welding_nb1nsw.pdf"
-                  target="_self" class="btn-course">
+                  target="_blank" class="btn-course">
                   More Info
                 </a>
               </div>
@@ -784,7 +781,7 @@
 
               <div class="course-main__box__lower-part--btn">
                 <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Sewing_fdbsyk.pdf"
-                  target="_self" class="btn-course">
+                  target="_blank" class="btn-course">
                   More Info
                 </a>
               </div>
@@ -862,7 +859,7 @@
 
               <div class="course-main__box__lower-part--btn">
                 <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1581874055/Beacon%20Files/PDF%27s/Plumbing_skt3th.pdf"
-                  target="_self" class="btn-course">
+                  target="_blank" class="btn-course">
                   More Info
                 </a>
               </div>
@@ -897,8 +894,14 @@
           </a>
         </div>
 
+        <div class="enrolling-option__login">
+          <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1574944173/Beacon%20Files/PDF%27s/Undertaking-Form_telcer.pdf" class="btn-enroll btn-enroll--login btn-enroll--white" target="_blank">
+            Undertaking Form
+          </a>
+        </div>
+
         <div class="enrolling-option__procedure">
-          <a href="https://forms.gle/nr3NmcnT2FCU2yyC7" class="btn-enroll btn-enroll--procedure btn-enroll--white">
+          <a href="https://forms.gle/nr3NmcnT2FCU2yyC7" class="btn-enroll btn-enroll--procedure btn-enroll--white" target="_blank">
             Certificate
           </a>
         </div>
