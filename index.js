@@ -50,6 +50,9 @@ $(document).ready(function(){
         autoplay: true,
         autoplay: 3000,
         animationDuration: 2500,
+        keyboard: true,
+        swipeThreshold: 10,
+        touchRatio:0.3,
 
         breakpoints: {
 
