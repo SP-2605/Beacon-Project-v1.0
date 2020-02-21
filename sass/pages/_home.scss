@@ -37,19 +37,14 @@
     }
 
     @include respond(bp-7){
-        // transform: skewY(-7deg);
-        padding: 10rem 0rem;
         background-attachment: scroll;
         -webkit-background-attachment: scroll;
         background-size: cover;
-        // & > *{
-            // transform: skewY(7deg);
-        // }
     }
 
-    @media only screen and (max-width:25.880em) {
-        background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
-    }
+    // @media only screen and (max-width:25.880em) {
+    //     background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
+    // }
 }
 
 
@@ -63,14 +58,14 @@
     }
 
     @include respond(bp-7){
-        // transform: skewY(-7deg);
         padding: 10rem 0rem;
         background-attachment: scroll;
         -webkit-background-attachment: scroll;
         background-size: cover;
-        // & > *{
-            // transform: skewY(7deg);
-        // }
+    }
+
+    @include respond(bp-5){
+        padding: 5rem 0;
     }
 }
 
@@ -85,9 +80,6 @@
     scroll-behavior: smooth;
     padding: 10rem 0rem;
 
-    @include respond(bp-12){
-        padding: 12rem 0rem;
-    }
 
     @include respond(bp-11) {
         padding: 10rem 0rem;
@@ -98,29 +90,24 @@
     }
 
     @include respond(bp-7){
-        // transform: skewY(-7deg);
-        padding: 10rem 0rem;
         background-attachment: scroll;
         -webkit-background-attachment: scroll;
         background-size: cover;
-        // & > *{
-            // transform: skewY(7deg);
-        // }
     }
 
-    @include respond(bp-5){
-        padding: 10rem 0rem;
-    }
+    // @include respond(bp-5){
+    //     padding: 10rem 0rem;
+    // }
 
-    @media only screen and (max-width:25.880em) {
-    padding: 7rem 0rem;
-    background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
-}
+    // @media only screen and (max-width:25.880em) {
+    // padding: 7rem 0rem;
+    // // background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
+    // }
 
 
-    @media only screen and (max-width:22.5em) {
-        padding: 7rem 0rem;
-    }
+    // @media only screen and (max-width:22.5em) {
+    //     padding: 7rem 0rem;
+    // }
 
 }
         
@@ -129,9 +116,9 @@
     scroll-behavior: smooth;
     padding: 10rem 0rem;
 
-    @include respond(bp-12){
-        padding: 12rem 0rem;
-    }
+    // @include respond(bp-12){
+    //     padding: 12rem 0rem;
+    // }
 
     @include respond(bp-11){
         padding: 10rem 0rem;
@@ -142,21 +129,21 @@
     }
 
     @include respond(bp-7) {
-        padding: 8rem 0rem;
+        padding: 5rem 0rem;
     }
 
-    @include respond(bp-6){
-        padding: 8rem 0rem;
-    }
+    // @include respond(bp-6){
+    //     padding: 8rem 0rem;
+    // }
 
-    @media only screen and (max-width:25.880em) {
-        padding: 7rem 0rem;
-    }
+    // @media only screen and (max-width:25.880em) {
+    //     padding: 7rem 0rem;
+    // }
 
 
-    @media only screen and (max-width:22.5em) {
-        padding: 7rem;
-    }
+    // @media only screen and (max-width:22.5em) {
+    //     padding: 7rem;
+    // }
 }
 
 
@@ -172,9 +159,9 @@
     padding: 15rem 0rem;
     z-index: 5;
 
-    @include respond(bp-12){
-        padding: 12rem 0rem;
-    }
+    // @include respond(bp-12){
+    //     padding: 12rem 0rem;
+    // }
 
     @include respond(bp-11) {
         padding: 10rem 0rem;
@@ -185,28 +172,21 @@
     }
 
     @include respond(bp-7) {
-        // transform: skewY(-7deg);
-        padding: 7rem 0rem;
-        // height: 50vh;
         background-attachment: scroll;
         -webkit-background-attachment: scroll;
-
-        // &>* {
-            // transform: skewY(7deg);
-        // }
     }
 
-    @include respond(bp-6){
-        padding: 10rem 0rem 17rem 0rem;
-    }
+    // @include respond(bp-6){
+    //     padding: 10rem 0rem 17rem 0rem;
+    // }
 
-    @include respond(bp-5){
-        padding: 8rem 0rem 18rem 0rem;
-    }
+    // @include respond(bp-5){
+    //     padding: 8rem 0rem 18rem 0rem;
+    // }
 
-    @media only screen and (max-width:25.880em) {
-        background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
-    }
+    // @media only screen and (max-width:25.880em) {
+    //     background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
+    // }
 
 
    
