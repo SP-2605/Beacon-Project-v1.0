@@ -34,8 +34,8 @@ $(document).ready(function(){
                 gap: 2,
                 perView: 2,
                 peek: {
-                    before: 10,
-                    after: 10,
+                    before: 8,
+                    after: 8,
                 }
             },
 

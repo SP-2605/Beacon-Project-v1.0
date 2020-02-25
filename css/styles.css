@@ -305,8 +305,6 @@ body {
       margin-bottom: 2rem; } }
 
 .btn:link, .btn:visited,
-.btn-proceed:link,
-.btn-proceed:visited,
 .btn-course:link,
 .btn-course:visited,
 .btn-enroll:link,
@@ -321,8 +319,6 @@ body {
   cursor: pointer; }
   @media only screen and (max-width: 37.5em) {
     .btn:link, .btn:visited,
-    .btn-proceed:link,
-    .btn-proceed:visited,
     .btn-course:link,
     .btn-course:visited,
     .btn-enroll:link,
@@ -330,8 +326,6 @@ body {
       padding: 1.7rem 3rem; } }
   @media only screen and (max-width: 31.25em) {
     .btn:link, .btn:visited,
-    .btn-proceed:link,
-    .btn-proceed:visited,
     .btn-course:link,
     .btn-course:visited,
     .btn-enroll:link,
@@ -339,8 +333,6 @@ body {
       padding: 1.7rem 1rem; } }
   @media only screen and (max-width: 25.875em) {
     .btn:link, .btn:visited,
-    .btn-proceed:link,
-    .btn-proceed:visited,
     .btn-course:link,
     .btn-course:visited,
     .btn-enroll:link,
@@ -348,8 +340,6 @@ body {
       padding: 1.5rem 1.2rem; } }
   @media only screen and (max-width: 25em) {
     .btn:link, .btn:visited,
-    .btn-proceed:link,
-    .btn-proceed:visited,
     .btn-course:link,
     .btn-course:visited,
     .btn-enroll:link,
@@ -358,41 +348,35 @@ body {
       font-size: 1.5rem; } }
 
 .btn:hover,
-.btn-proceed:hover,
 .btn-course:hover,
 .btn-enroll:hover {
   transform: translateY(-0.4rem);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); }
   @media only screen and (max-width: 68.75em) {
     .btn:hover,
-    .btn-proceed:hover,
     .btn-course:hover,
     .btn-enroll:hover {
       transform: none;
       box-shadow: none; } }
   .btn:hover::after,
-  .btn-proceed:hover::after,
   .btn-course:hover::after,
   .btn-enroll:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
     @media only screen and (max-width: 68.75em) {
       .btn:hover::after,
-      .btn-proceed:hover::after,
       .btn-course:hover::after,
       .btn-enroll:hover::after {
         transform: none;
         box-shadow: none; } }
 
 .btn:active,
-.btn-proceed:active,
 .btn-course:active,
 .btn-enroll:active {
   transform: translateY(-0.2rem);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
 
 .btn--white,
-.btn-proceed--white,
 .btn-course--white,
 .btn-enroll--white {
   background-color: #fff;
@@ -400,19 +384,16 @@ body {
   display: inline-block;
   border-radius: 10rem; }
   .btn--white::after,
-  .btn-proceed--white::after,
   .btn-course--white::after,
   .btn-enroll--white::after {
     background-color: #fff; }
   @media only screen and (max-width: 25em) {
     .btn--white,
-    .btn-proceed--white,
     .btn-course--white,
     .btn-enroll--white {
       border-radius: 5px; } }
 
 .btn--yellow,
-.btn-proceed--yellow,
 .btn-course--yellow,
 .btn-enroll--yellow {
   background-color: #fcd12a;
@@ -425,14 +406,12 @@ body {
   top: 4rem;
   padding: 1.7rem 1.5rem; }
   .btn--yellow::after,
-  .btn-proceed--yellow::after,
   .btn-course--yellow::after,
   .btn-enroll--yellow::after {
     content: "";
     background-color: #fcd12a; }
 
 .btn::after,
-.btn-proceed::after,
 .btn-course::after,
 .btn-enroll::after {
   content: "";
@@ -447,20 +426,17 @@ body {
   transition: all 0.3s; }
   @media only screen and (max-width: 37.5em) {
     .btn::after,
-    .btn-proceed::after,
     .btn-course::after,
     .btn-enroll::after {
       transition: none; } }
   @media only screen and (max-width: 20em) {
     .btn::after,
-    .btn-proceed::after,
     .btn-course::after,
     .btn-enroll::after {
       border-radius: 1rem;
       transition: none; } }
 
 .btn--animated,
-.btn-proceed--animated,
 .btn-course--animated,
 .btn-enroll--animated {
   animation-name: moveBtnUp;
@@ -480,44 +456,26 @@ body {
     .btn-enroll {
       font-size: 2rem !important; } }
   @media only screen and (max-width: 60em) {
-    .btn-enroll--signup {
+    .btn-enroll--register {
       padding: 1.5rem 3rem !important; } }
   @media only screen and (max-width: 43.75em) {
-    .btn-enroll--signup {
+    .btn-enroll--register {
       padding: 1.1rem 2rem !important; } }
   @media only screen and (max-width: 60em) {
-    .btn-enroll--login {
+    .btn-enroll--course-confirm, .btn-enroll--undertaking {
       padding: 1.5rem 3rem !important; } }
   @media only screen and (max-width: 43.75em) {
-    .btn-enroll--login {
+    .btn-enroll--course-confirm, .btn-enroll--undertaking {
       padding: 1.1rem 2rem !important; } }
   @media only screen and (max-width: 60em) {
-    .btn-enroll--procedure {
+    .btn-enroll--certificate {
       padding: 1.5rem 3rem !important; } }
   @media only screen and (max-width: 43.75em) {
-    .btn-enroll--procedure {
+    .btn-enroll--certificate {
       padding: 1.1rem 2rem !important; } }
   .btn-enroll::after {
     content: "";
     border-radius: 5px; }
-
-.btn-proceed {
-  background-color: #2ECC71;
-  color: #fff;
-  display: inline-block;
-  border-radius: 3px;
-  padding: 1.5rem 4.3rem !important;
-  outline: none;
-  border: none;
-  transition: all .3s;
-  cursor: pointer; }
-  .btn-proceed::after {
-    content: "";
-    border-radius: 4px;
-    background-color: #2ECC71; }
-  @media only screen and (max-width: 25.875em) {
-    .btn-proceed {
-      padding: 1rem 3.5rem !important; } }
 
 .btn-Read-More:link, .btn-Read-More:visited {
   color: #ffa726;
@@ -960,12 +918,7 @@ body {
             .faculty-box__sub--box__faculty-info--modifier {
               font-size: 1rem; } }
 
-.popup,
-.login-popup,
-.signup-popup,
-.faculty-popup,
-.procedure-popup,
-.otp-popup {
+.popup {
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -976,21 +929,11 @@ body {
   opacity: 0;
   visibility: hidden; }
   @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
-    .popup,
-    .login-popup,
-    .signup-popup,
-    .faculty-popup,
-    .procedure-popup,
-    .otp-popup {
+    .popup {
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
       background-color: rgba(0, 0, 0, 0.3); } }
-  .popup__content,
-  .login-popup__content,
-  .signup-popup__content,
-  .faculty-popup__content,
-  .procedure-popup__content,
-  .otp-popup__content {
+  .popup__content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1004,314 +947,71 @@ body {
     transform: translate(-50%, -50%) scale(0.8);
     transition: all .5s; }
     @media only screen and (min-width: 112.5em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 133rem;
         height: 75rem; } }
     @media only screen and (min-width: 81.25em) and (max-width: 100em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 98rem;
         height: 55rem; } }
     @media only screen and (max-width: 75em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 96rem;
         height: 54rem; } }
     @media only screen and (max-width: 68.75em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 96rem;
         height: 54rem; } }
     @media only screen and (max-width: 56.25em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 80rem;
         height: 45rem; } }
     @media only screen and (max-width: 50em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 70rem;
         height: 40rem; } }
     @media only screen and (max-width: 43.75em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 60rem;
         height: 34rem; } }
     @media only screen and (max-width: 31.25em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 44rem;
         height: 25rem; } }
     @media only screen and (max-width: 25.875em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 35rem;
         height: 20rem; } }
     @media only screen and (max-width: 25.6875em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 35rem;
         height: 20rem; } }
     @media only screen and (max-width: 25em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 34rem;
         height: 19.5rem; } }
     @media only screen and (max-width: 23.4375em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 33rem;
         height: 19rem; } }
     @media only screen and (max-width: 22.5em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 32rem;
         height: 18.5rem; } }
     @media only screen and (max-width: 20em) {
-      .popup__content,
-      .login-popup__content,
-      .signup-popup__content,
-      .faculty-popup__content,
-      .procedure-popup__content,
-      .otp-popup__content {
+      .popup__content {
         width: 28rem;
         height: 16rem; } }
-  .popup__video,
-  .login-popup__video,
-  .signup-popup__video,
-  .faculty-popup__video,
-  .procedure-popup__video,
-  .otp-popup__video {
+  .popup__video {
     width: 100%;
     height: 100%; }
-  .popup__enroll-content,
-  .login-popup__enroll-content,
-  .signup-popup__enroll-content,
-  .faculty-popup__enroll-content,
-  .procedure-popup__enroll-content,
-  .otp-popup__enroll-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border: 4px solid #ffbb00;
-    border-radius: 3px;
-    overflow: hidden;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.8);
-    transition: all .5s; }
-  .popup:target,
-  .login-popup:target,
-  .signup-popup:target,
-  .faculty-popup:target,
-  .procedure-popup:target,
-  .otp-popup:target {
+  .popup:target {
     opacity: 1;
     visibility: visible; }
-  .popup:target .popup__content,
-  .popup:target .popup__enroll-content,
-  .login-popup:target .popup__content,
-  .login-popup:target .popup__enroll-content,
-  .signup-popup:target .popup__content,
-  .signup-popup:target .popup__enroll-content,
-  .faculty-popup:target .popup__content,
-  .faculty-popup:target .popup__enroll-content,
-  .procedure-popup:target .popup__content,
-  .procedure-popup:target .popup__enroll-content,
-  .otp-popup:target .popup__content,
-  .otp-popup:target .popup__enroll-content, .popup:target
-  .login-popup__content,
-  .popup:target
-  .login-popup__enroll-content,
-  .login-popup:target
-  .login-popup__content,
-  .login-popup:target
-  .login-popup__enroll-content,
-  .signup-popup:target
-  .login-popup__content,
-  .signup-popup:target
-  .login-popup__enroll-content,
-  .faculty-popup:target
-  .login-popup__content,
-  .faculty-popup:target
-  .login-popup__enroll-content,
-  .procedure-popup:target
-  .login-popup__content,
-  .procedure-popup:target
-  .login-popup__enroll-content,
-  .otp-popup:target
-  .login-popup__content,
-  .otp-popup:target
-  .login-popup__enroll-content, .popup:target
-  .signup-popup__content,
-  .popup:target
-  .signup-popup__enroll-content,
-  .login-popup:target
-  .signup-popup__content,
-  .login-popup:target
-  .signup-popup__enroll-content,
-  .signup-popup:target
-  .signup-popup__content,
-  .signup-popup:target
-  .signup-popup__enroll-content,
-  .faculty-popup:target
-  .signup-popup__content,
-  .faculty-popup:target
-  .signup-popup__enroll-content,
-  .procedure-popup:target
-  .signup-popup__content,
-  .procedure-popup:target
-  .signup-popup__enroll-content,
-  .otp-popup:target
-  .signup-popup__content,
-  .otp-popup:target
-  .signup-popup__enroll-content, .popup:target
-  .faculty-popup__content,
-  .popup:target
-  .faculty-popup__enroll-content,
-  .login-popup:target
-  .faculty-popup__content,
-  .login-popup:target
-  .faculty-popup__enroll-content,
-  .signup-popup:target
-  .faculty-popup__content,
-  .signup-popup:target
-  .faculty-popup__enroll-content,
-  .faculty-popup:target
-  .faculty-popup__content,
-  .faculty-popup:target
-  .faculty-popup__enroll-content,
-  .procedure-popup:target
-  .faculty-popup__content,
-  .procedure-popup:target
-  .faculty-popup__enroll-content,
-  .otp-popup:target
-  .faculty-popup__content,
-  .otp-popup:target
-  .faculty-popup__enroll-content, .popup:target
-  .procedure-popup__content,
-  .popup:target
-  .procedure-popup__enroll-content,
-  .login-popup:target
-  .procedure-popup__content,
-  .login-popup:target
-  .procedure-popup__enroll-content,
-  .signup-popup:target
-  .procedure-popup__content,
-  .signup-popup:target
-  .procedure-popup__enroll-content,
-  .faculty-popup:target
-  .procedure-popup__content,
-  .faculty-popup:target
-  .procedure-popup__enroll-content,
-  .procedure-popup:target
-  .procedure-popup__content,
-  .procedure-popup:target
-  .procedure-popup__enroll-content,
-  .otp-popup:target
-  .procedure-popup__content,
-  .otp-popup:target
-  .procedure-popup__enroll-content, .popup:target
-  .otp-popup__content,
-  .popup:target
-  .otp-popup__enroll-content,
-  .login-popup:target
-  .otp-popup__content,
-  .login-popup:target
-  .otp-popup__enroll-content,
-  .signup-popup:target
-  .otp-popup__content,
-  .signup-popup:target
-  .otp-popup__enroll-content,
-  .faculty-popup:target
-  .otp-popup__content,
-  .faculty-popup:target
-  .otp-popup__enroll-content,
-  .procedure-popup:target
-  .otp-popup__content,
-  .procedure-popup:target
-  .otp-popup__enroll-content,
-  .otp-popup:target
-  .otp-popup__content,
-  .otp-popup:target
-  .otp-popup__enroll-content {
+  .popup:target .popup__content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
-  .popup__close:link, .popup__close:visited, .popup__close-enroll:link, .popup__close-enroll:visited,
-  .login-popup__close:link,
-  .login-popup__close:visited,
-  .login-popup__close-enroll:link,
-  .login-popup__close-enroll:visited,
-  .signup-popup__close:link,
-  .signup-popup__close:visited,
-  .signup-popup__close-enroll:link,
-  .signup-popup__close-enroll:visited,
-  .faculty-popup__close:link,
-  .faculty-popup__close:visited,
-  .faculty-popup__close-enroll:link,
-  .faculty-popup__close-enroll:visited,
-  .procedure-popup__close:link,
-  .procedure-popup__close:visited,
-  .procedure-popup__close-enroll:link,
-  .procedure-popup__close-enroll:visited,
-  .otp-popup__close:link,
-  .otp-popup__close:visited,
-  .otp-popup__close-enroll:link,
-  .otp-popup__close-enroll:visited {
+  .popup__close:link, .popup__close:visited {
     color: #eee;
     position: absolute;
     top: 2.4rem;
@@ -1322,48 +1022,8 @@ body {
     transition: all .4s;
     font-weight: 800;
     cursor: pointer; }
-  .popup__close:hover, .popup__close-enroll:hover,
-  .login-popup__close:hover,
-  .login-popup__close-enroll:hover,
-  .signup-popup__close:hover,
-  .signup-popup__close-enroll:hover,
-  .faculty-popup__close:hover,
-  .faculty-popup__close-enroll:hover,
-  .procedure-popup__close:hover,
-  .procedure-popup__close-enroll:hover,
-  .otp-popup__close:hover,
-  .otp-popup__close-enroll:hover {
+  .popup__close:hover {
     color: #ff7730; }
-  @media only screen and (min-width: 112.5em) {
-    .popup__close-enroll:link, .popup__close-enroll:visited,
-    .login-popup__close-enroll:link,
-    .login-popup__close-enroll:visited,
-    .signup-popup__close-enroll:link,
-    .signup-popup__close-enroll:visited,
-    .faculty-popup__close-enroll:link,
-    .faculty-popup__close-enroll:visited,
-    .procedure-popup__close-enroll:link,
-    .procedure-popup__close-enroll:visited,
-    .otp-popup__close-enroll:link,
-    .otp-popup__close-enroll:visited {
-      z-index: 10000;
-      color: #505050; } }
-
-.login-popup__enroll-content {
-  height: 100%;
-  width: 100%; }
-
-.signup-popup__enroll-content {
-  height: 100%;
-  width: 100%; }
-
-.procedure-popup__enroll-content {
-  height: 100%;
-  width: 100%; }
-
-.otp-popup__enroll-content {
-  width: 45%;
-  height: 50%; }
 
 .enrolling-option {
   display: flex;
@@ -1377,377 +1037,10 @@ body {
       flex-direction: column;
       align-items: center;
       align-content: space-evenly; }
-      .enrolling-option__sign-in {
+      .enrolling-option__register {
         flex: 1 0 0; }
-      .enrolling-option__login {
+      .enrolling-option__course-confirm {
         flex: 1 0 0; } }
-
-.login-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center; }
-  .login-content__image {
-    display: flex; }
-    .login-content__image--modifier {
-      height: 100vh;
-      flex-grow: 1; }
-    @media only screen and (max-width: 75em) {
-      .login-content__image {
-        display: none; } }
-    @media only screen and (max-width: 68.75em) {
-      .login-content__image {
-        display: none; } }
-  .login-content__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100%;
-    background-color: #fff; }
-    .login-content__form--profile {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-      .login-content__form--profile--modifier {
-        height: 20rem;
-        border-radius: 10rem; }
-        @media only screen and (max-width: 75em) {
-          .login-content__form--profile--modifier {
-            height: 20rem; } }
-        @media only screen and (max-width: 68.75em) {
-          .login-content__form--profile--modifier {
-            height: 20rem; } }
-    .login-content__form--field {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .login-content__form--field--input {
-        font-size: 2rem;
-        font-family: inherit;
-        color: inherit;
-        padding: 1.5rem 1.5rem;
-        border-radius: 3px;
-        background-color: rgba(224, 224, 224, 0.84);
-        border: none;
-        border-bottom: 2px solid transparent;
-        width: 80%;
-        height: 10%;
-        display: block;
-        position: relative;
-        top: 2rem;
-        margin-bottom: -1rem; }
-        .login-content__form--field--input:focus {
-          outline: none;
-          border-bottom: 2px solid #00897b;
-          transition: all .3s;
-          transition-timing-function: ease-in-out; }
-        .login-content__form--field--input:focus:invalid {
-          border-bottom: 2px solid #ff7730;
-          transition: all .5s;
-          transition-timing-function: ease-in-out;
-          outline: none; }
-        .login-content__form--field--input::-webkit-input-placeholder {
-          color: #999; }
-      .login-content__form--field--label {
-        font-size: 1.6rem;
-        font-family: inherit;
-        font-weight: 700;
-        margin-top: 3.5rem;
-        display: inline-block;
-        transition: all .3s;
-        align-self: flex-start;
-        margin-left: 7rem; }
-    .login-content__form--proceed {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .login-content__form--proceed--modifier {
-        flex: 0 0 85%;
-        text-align: center;
-        font-size: 2.5rem !important;
-        text-transform: uppercase; }
-  .login-content__form--field--input:placeholder-shown + .login-content__form--field--label {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-4rem); }
-  .login-content__form--field--input[type=number]::-webkit-inner-spin-button, .login-content__form--field--input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; }
-
-.signup-content {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff; }
-  .signup-content__image {
-    display: flex; }
-    .signup-content__image--modifier {
-      height: 100vh;
-      flex-grow: 1; }
-  .signup-content__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 5px; }
-    .signup-content__form--profile {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-      .signup-content__form--profile--modifier {
-        height: 20rem;
-        border-radius: 10rem; }
-        @media only screen and (max-width: 75em) {
-          .signup-content__form--profile--modifier {
-            height: 20rem; } }
-        @media only screen and (max-width: 68.75em) {
-          .signup-content__form--profile--modifier {
-            height: 20rem; } }
-    .signup-content__form--field {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .signup-content__form--field--input {
-        font-size: 2rem;
-        font-family: inherit;
-        color: inherit;
-        padding: 1.5rem 1.5rem;
-        border-radius: 3px;
-        background-color: rgba(224, 224, 224, 0.84);
-        border: none;
-        border-bottom: 2px solid transparent;
-        width: 80%;
-        height: 10%;
-        display: block;
-        position: relative;
-        top: 2rem;
-        margin-bottom: -1rem; }
-        .signup-content__form--field--input:focus {
-          outline: none;
-          border-bottom: 2px solid #00897b;
-          transition: all .3s;
-          transition-timing-function: ease-in-out; }
-        .signup-content__form--field--input:focus:invalid {
-          border-bottom: 2px solid #ff7730;
-          transition: all .5s;
-          transition-timing-function: ease-in-out;
-          outline: none; }
-        .signup-content__form--field--input::-webkit-input-placeholder {
-          color: #999; }
-      .signup-content__form--field--label {
-        font-size: 1.6rem;
-        font-family: inherit;
-        font-weight: 700;
-        margin-top: 3.5rem;
-        display: inline-block;
-        transition: all .3s;
-        align-self: flex-start;
-        margin-left: 7rem; }
-        @media only screen and (max-width: 68.75em) {
-          .signup-content__form--field--label {
-            margin-left: 8rem; } }
-        @media only screen and (max-width: 60em) {
-          .signup-content__form--field--label {
-            margin-left: 7rem; } }
-        @media only screen and (max-width: 25.875em) {
-          .signup-content__form--field--label {
-            margin-left: 5rem; } }
-    .signup-content__form--radio {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center; }
-      .signup-content__form--radio--content {
-        display: inline-block; }
-      .signup-content__form--radio--input {
-        display: none; }
-      .signup-content__form--radio--label {
-        font-size: 2.1rem;
-        font-family: inherit;
-        cursor: pointer;
-        position: relative;
-        padding-left: 5rem; }
-      .signup-content__form--radio--button {
-        height: 2.4rem;
-        width: 2.4rem;
-        border-radius: 50%;
-        display: inline-block;
-        border: 6px solid #00897b;
-        position: absolute;
-        left: 0;
-        top: -0.4rem; }
-        .signup-content__form--radio--button::after {
-          content: "";
-          display: block;
-          height: 1.6rem;
-          width: 1.6rem;
-          border-radius: 50%;
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          background-color: #00897b;
-          opacity: 0;
-          transition: opacity .4s ease; }
-    .signup-content__form--proceed {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem; }
-      .signup-content__form--proceed--modifier {
-        flex: 0 0 83%;
-        text-align: center;
-        font-size: 2.5rem !important;
-        text-transform: uppercase; }
-        @media only screen and (max-width: 75em) {
-          .signup-content__form--proceed--modifier {
-            flex: 0 0 73%; } }
-  .signup-content__form--field--input:placeholder-shown + .signup-content__form--field--label {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-4rem); }
-  .signup-content__form--field--input[type=number]::-webkit-inner-spin-button, .signup-content__form--field--input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; }
-  .signup-content__form--radio--input:checked ~ .signup-content__form--radio--label .signup-content__form--radio--button::after {
-    opacity: 1; }
-
-.otp-content {
-  display: flex;
-  flex-direction: row; }
-  .otp-content__image {
-    display: flex; }
-    .otp-content__image--modifier {
-      height: 100vh;
-      flex-grow: 1; }
-  .otp-content__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 5px; }
-    .otp-content__form--field {
-      display: flex;
-      flex-direction: column; }
-      .otp-content__form--field--input {
-        font-size: 2rem;
-        font-family: inherit;
-        color: inherit;
-        padding: 1.5rem 1.5rem;
-        border-radius: 3px;
-        background-color: rgba(224, 224, 224, 0.84);
-        border: none;
-        border-bottom: 2px solid transparent;
-        height: 7rem;
-        display: block;
-        position: relative;
-        width: 85%;
-        align-self: center; }
-        .otp-content__form--field--input:focus {
-          outline: none;
-          border-bottom: 2px solid #00897b;
-          transition: all .3s;
-          transition-timing-function: ease-in-out; }
-        .otp-content__form--field--input:focus:invalid {
-          border-bottom: 2px solid #ff7730;
-          transition: all .5s;
-          transition-timing-function: ease-in-out;
-          outline: none; }
-        .otp-content__form--field--input::-webkit-input-placeholder {
-          color: #999; }
-      .otp-content__form--field--label {
-        font-size: 1.6rem;
-        font-family: inherit;
-        font-weight: 600;
-        margin-top: 2rem;
-        margin-left: 6rem;
-        display: inline-block;
-        transition: all .3s;
-        align-self: flex-start; }
-    .otp-content__form--proceed {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .otp-content__form--proceed--modifier {
-        flex: 0 0 90%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2.5rem;
-        text-transform: uppercase; }
-  .otp-content__form--field--input:placeholder-shown + .otp-content__form--field--label {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-4rem); }
-  .otp-content__form--field--input[type=number]::-webkit-inner-spin-button, .otp-content__form--field--input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; }
-
-.procedure-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center; }
-  .procedure-content__image {
-    display: flex; }
-    .procedure-content__image--modifier {
-      height: 70rem;
-      flex-grow: 1; }
-  .procedure-content__data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-around;
-    height: 90%;
-    width: 100%;
-    background-color: #fff; }
-    .procedure-content__data--para {
-      display: flex;
-      margin: 0 3.5rem;
-      width: 90%;
-      align-self: center; }
-      .procedure-content__data--para--modifier {
-        font-size: 2rem;
-        text-align: justify;
-        line-height: 3rem;
-        letter-spacing: 0.5px;
-        align-self: center; }
-        @media only screen and (max-width: 37.5em) {
-          .procedure-content__data--para--modifier {
-            font-size: 2rem;
-            line-height: 2.8rem;
-            letter-spacing: 0.5px; } }
-        @media only screen and (max-width: 23.5375em) {
-          .procedure-content__data--para--modifier {
-            font-size: 2rem;
-            line-height: 2.4rem;
-            letter-spacing: .1px; } }
-        @media only screen and (max-width: 22.5em) {
-          .procedure-content__data--para--modifier {
-            font-size: 1.8rem !important;
-            line-height: 2.2rem;
-            letter-spacing: 0; } }
-    .procedure-content__data--proceed {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      margin-top: 7rem; }
-      .procedure-content__data--proceed--modifier {
-        flex-grow: 0.85;
-        text-align: center;
-        font-size: 2.5rem !important; }
 
 .flash-news-box {
   display: flex;
@@ -1980,10 +1273,18 @@ body {
     transition: all .2s;
     background-color: #333;
     font-size: 1.5rem; }
+    @media only screen and (max-width: 31.25em) {
+      .footer__link:link, .footer__link:visited {
+        color: #fcd12a;
+        font-size: 1.3rem; } }
   .footer__link:hover, .footer__link:active {
     color: #fcd12a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
+    @media only screen and (max-width: 31.25em) {
+      .footer__link:hover, .footer__link:active {
+        box-shadow: none;
+        transform: none; } }
   .footer__copyright--data {
     font-size: 1.7rem;
     border-top: 1px solid #999;

@@ -7,21 +7,6 @@
         padding: 5rem 0rem;
     }
 
-    // @include respond(bp-7){
-    //     padding: 13rem 0rem 5rem 0rem;
-    //     margin-top: -5rem;
-    // }
-
-    // @include respond(bp-6){
-    //     padding: 5rem 0rem 5rem 0rem;
-    // }
-
-    // @media only screen and (max-width:25.875em) {
-    //     padding: 5rem 0rem;
-    //     margin-top: 0;
-    // }
-
-
     &__main{
         display: flex;
         flex-direction: row;
@@ -33,8 +18,6 @@
             align-items: center;
         }
     }
-
-    
 
     &__map-box{
         display: flex;
@@ -202,6 +185,11 @@
             background-color: $color-dark-grey-2;
             font-size: 1.5rem;
 
+            @include respond(bp-5) {
+                color: $color-secondary;
+                font-size: 1.3rem;
+            }
+
         }
 
         &:hover,
@@ -209,7 +197,14 @@
             color: $color-secondary;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
             transform: rotate(5deg) scale(1.3);
+
+            @include respond(bp-5) {
+                box-shadow: none;
+                transform: none;
+            }
         }
+
+        
 
     }
 

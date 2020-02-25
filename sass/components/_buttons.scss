@@ -1,5 +1,4 @@
 .btn,
-.btn-proceed,
 .btn-course,
 .btn-enroll{
 
@@ -139,7 +138,7 @@
         font-size: 2rem!important;
     }
   
-        &--signup{
+        &--register{
 
             @media only screen and (max-width:60em){
                 padding: 1.5rem 3rem!important;
@@ -150,7 +149,8 @@
             }
         }
 
-        &--login{
+        &--course-confirm,
+        &--undertaking{
             @media only screen and (max-width:60em) {
                 padding: 1.5rem 3rem!important;
             }
@@ -160,7 +160,7 @@
             }
         }
 
-        &--procedure{
+        &--certificate{
             @media only screen and (max-width:60em) {
                 padding: 1.5rem 3rem!important;
             }
@@ -175,29 +175,6 @@
         border-radius: 5px;
     }
 
-}
-
-//Proceed-Button
-.btn-proceed{
-    background-color: $color-proceed;
-    color: $color-white-1;
-    display: inline-block;
-    border-radius: 3px;
-    padding: 1.5rem 4.3rem!important;
-    outline: none;
-    border: none;
-    transition: all .3s;
-    cursor: pointer;
-    
-    &::after {
-        content: "";
-        border-radius: 4px;
-        background-color: $color-proceed;
-    }
-
-    @media only screen and (max-width:25.875em){
-       padding: 1rem 3.5rem!important;
-    }
 }
 
 //Read More Button
