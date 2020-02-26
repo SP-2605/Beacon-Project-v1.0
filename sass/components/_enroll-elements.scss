@@ -7,6 +7,14 @@
     height: 50vh;
     align-items: center;
 
+    @media only screen and (max-width:60em){
+        flex-direction: column;
+    }
+
+    @include respond(bp-9){
+        flex-direction: column;
+    }
+
 
     @include respond(bp-6) {
         flex-direction: column;
@@ -20,6 +28,14 @@
         &__course-confirm {
             flex: 1 0 0;
         }
+
+         &__undertaking {
+             flex: 1 0 0;
+         }
+         
+         &__certificate{
+             flex: 1 0 0;
+         }
     }
 
 }

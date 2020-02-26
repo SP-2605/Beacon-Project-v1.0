@@ -133,9 +133,14 @@
     font-size: 2.5rem!important;
     font-family: inherit;
     letter-spacing: 1px;
+    
+    @include respond(bp-12) {
+         font-size: 2rem !important;
+     }
 
-    @include respond(bp-8){
-        font-size: 2rem!important;
+    @include respond(bp-11){
+        font-size: 1.7rem!important;
+        padding: 1.7rem 3rem!important;
     }
   
         &--register{
