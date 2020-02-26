@@ -76,6 +76,7 @@
             position: relative;
             left: 50%;
             transform: translateX(-50%);
+            border: 2px $color-light-grey solid;
 
             @include respond(bp-12){
                 width: 95%;
@@ -87,6 +88,10 @@
                 height: 0;
                 width: 0;
             }
+
+            // @include respond(bp-5){
+            //     border: none;
+            // }
         }
     }
 }

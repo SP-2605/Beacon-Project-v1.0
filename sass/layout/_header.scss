@@ -14,19 +14,9 @@
 
     @include respond(bp-7) {
         clip-path: none;
-        // clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
         background-attachment: scroll;
         -webkit-background-attachment: scroll;
     }
-
-    @include respond(bp-6){
-        // clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
-    }
-
-    @media only screen and (max-width:25.875em){
-        // clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
-    }
-
 
     &__google-translate {
        position: absolute;

@@ -130,6 +130,10 @@ body {
     body {
       padding: 0; } }
 
+::selection {
+  background-color: #ff7730;
+  color: #fff; }
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -1112,7 +1116,8 @@ body {
       overflow: hidden;
       position: relative;
       left: 50%;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      border: 2px #eae9e9 solid; }
       @media only screen and (min-width: 81.25em) and (max-width: 100em) {
         .flash-news-box__batch-pics--modifier {
           width: 95%; } }
@@ -1130,7 +1135,8 @@ body {
   left: 50%;
   transform: translate(-50%);
   overflow: hidden;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: #ffa726 2px solid; }
   @media only screen and (min-width: 81.25em) and (max-width: 100em) {
     .carousel-box__img {
       width: 95%; } }

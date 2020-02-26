@@ -41,10 +41,6 @@
         -webkit-background-attachment: scroll;
         background-size: cover;
     }
-
-    // @media only screen and (max-width:25.880em) {
-    //     background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
-    // }
 }
 
 
@@ -95,30 +91,12 @@
         background-size: cover;
     }
 
-    // @include respond(bp-5){
-    //     padding: 10rem 0rem;
-    // }
-
-    // @media only screen and (max-width:25.880em) {
-    // padding: 7rem 0rem;
-    // // background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
-    // }
-
-
-    // @media only screen and (max-width:22.5em) {
-    //     padding: 7rem 0rem;
-    // }
-
 }
         
 .course-section {
     background-color: $color-white-2;
     scroll-behavior: smooth;
     padding: 10rem 0rem;
-
-    // @include respond(bp-12){
-    //     padding: 12rem 0rem;
-    // }
 
     @include respond(bp-11){
         padding: 10rem 0rem;
@@ -132,18 +110,6 @@
         padding: 5rem 0rem;
     }
 
-    // @include respond(bp-6){
-    //     padding: 8rem 0rem;
-    // }
-
-    // @media only screen and (max-width:25.880em) {
-    //     padding: 7rem 0rem;
-    // }
-
-
-    // @media only screen and (max-width:22.5em) {
-    //     padding: 7rem;
-    // }
 }
 
 
@@ -159,10 +125,6 @@
     padding: 15rem 0rem;
     z-index: 5;
 
-    // @include respond(bp-12){
-    //     padding: 12rem 0rem;
-    // }
-
     @include respond(bp-11) {
         padding: 10rem 0rem;
     }
@@ -176,18 +138,6 @@
         -webkit-background-attachment: scroll;
     }
 
-    // @include respond(bp-6){
-    //     padding: 10rem 0rem 17rem 0rem;
-    // }
-
-    // @include respond(bp-5){
-    //     padding: 8rem 0rem 18rem 0rem;
-    // }
-
-    // @media only screen and (max-width:25.880em) {
-    //     background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity);
-    // }
-
 
    
     input[type=number]::-webkit-inner-spin-button,
@@ -197,33 +147,5 @@
         appearance: none;
         margin: 0;
     }
-
-    // @include respond(bp-11){
-    //     // clip-path: polygon(50% 12%, 100% 0, 100% 86%, 50% 100%, 0 86%, 0 0);
-    //     margin-top: -11rem;
-    //     margin-bottom: -16rem;
-    // }    
-
-    // @include respond(bp-10){
-    //     // clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0, 50% 16%);
-    //     height: 30rem;
-    // }
-
-    // @include respond(bp-6){
-    //     clip-path: polygon(0 23%, 100% 0%, 100% 77%, 0% 100%);
-    //     margin-top: -18rem;
-    // }
-
-    // @media only screen and(max-width:23.4375em){
-    //     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-    // }
-
-    // @media only screen and(max-width:22.5em){
-    //     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-    // }
-
-    // @include respond(bp-3){
-    //     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-    // }
 }
 

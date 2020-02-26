@@ -2,8 +2,25 @@
 $color-secondary: #fcd12a;
 $color-secondary-dark: #ff7730;
 $color-secondary-2:#ffa726;
+$color-secondary-light-opacity: #ffbb00d5;
+$color-secondary-dark-opacity: #ff7830d5;
+$color-secondary-light: #ffbb00;
 
-$color-proceed: #2ECC71;
+// GREY
+$color-dark-grey-1: #999;
+$color-dark-grey-3:#e0e0e0;
+$color-light-grey-opacity: #eae9e9c5;
+$color-dark-grey-3-opacity:#e0e0e0c5;
+
+//REQUIRED
+$color-black: #000;
+$color-text: #777777;
+$color-white-1: #fff;
+$color-white-2: #eee;
+$color-light-grey: #eae9e9;
+$color-dark-grey-2: #333;
+$color-dark-grey-4: rgb(80, 80, 80);
+
 //GRID
 $grid-width-1: 114rem;
 $grid-width-2: 165rem;
@@ -16,34 +33,5 @@ $gutter-vertical-small-1: 7rem;
 $gutter-vertical-small-2: 5rem;
 $gutter-horizontal: 6rem;
 
-//COLOR-VARIABLES
-//BASIC
-
-// GREY
-$color-dark-grey-1: #999;
-$color-dark-grey-3:#e0e0e0;
-
-$color-light-grey-opacity: #eae9e9c5;
-$color-dark-grey-3-opacity:#e0e0e0c5;
-
-
-// MAIN COLORS
-$color-primary:#00897b;
-
-
-
-//REQUIRED
-$color-black: #000;
-$color-text: #777777;
-$color-white-1: #fff;
-$color-white-2: #eee;
-$color-light-grey: #eae9e9;
-$color-dark-grey-2: #333;
-$color-dark-grey-4: rgb(80, 80, 80);
-
-
-$color-secondary-light-opacity: #ffbb00d5;
-$color-secondary-dark-opacity: #ff7830d5;
-$color-secondary-light: #ffbb00;
 
 

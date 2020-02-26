@@ -8,6 +8,7 @@
         transform: translate(-50%);
         overflow: hidden;
         border-radius: 5px;
+        border: $color-secondary-2 2px solid;
 
         @include respond(bp-12){
             width: 95%;
