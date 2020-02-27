@@ -81,6 +81,35 @@
         top: 40%;
         transform: translate(-50%, -50%);
         text-align: center;
+
+        @include respond(bp-10){
+            width: 97%;
+        }
+
+        @include respond(bp-4){
+            width: 100%;
+        }
+
+        @include respond(bp-3) {
+            width: 100%;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__btns{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &--video-btn{
+            margin: 1rem;
+        }
+
+        &--contribute-btn{
+            margin: 1rem;
+        }
     }
 
 }

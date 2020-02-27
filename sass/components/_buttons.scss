@@ -6,30 +6,22 @@
     &:visited {
         text-decoration: none;
         text-transform: uppercase;
-        padding: 1.7rem 4.3rem;
+        padding: 1.7rem 3rem;
         transition: all 0.4s;
         font-size: 2rem;
         font-weight: 600;
         position: relative;
         cursor: pointer;
 
+
         @include respond(bp-6){
             padding: 1.7rem 3rem;
         }
 
         @include respond(bp-5) {
-            padding: 1.7rem 1rem;
+            padding: 1.3rem 1.3rem;
+            font-size: 1.6rem;
         }
-
-        @media only screen and (max-width: 25.875em) {
-            padding: 1.5rem 1.2rem;
-        }
-
-        @include respond(bp-4) {
-            padding: 1rem 1rem;
-            font-size: 1.5rem;
-        }
-
     }
 
     &:hover {
@@ -122,6 +114,20 @@
         animation-delay: .80s;
         animation-timing-function: ease-out;
         animation-fill-mode: backwards;
+
+        &__1 {
+            animation-name: moveBtnUp;
+            animation-duration: .80s;
+            animation-delay: .85s;
+            animation-fill-mode: backwards;
+        }
+
+        &__2 {
+            animation-name: moveBtnUp;
+            animation-duration: .85s;
+            animation-delay: .90s;
+            animation-fill-mode: backwards;
+        }
     }
 }
 
