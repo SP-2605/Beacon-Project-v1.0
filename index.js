@@ -39,6 +39,24 @@ $(document).ready(function(){
                 }
             },
 
+            960: {
+                gap: 2,
+                perView: 1,
+                peek: {
+                    before: 20,
+                    after: 20,
+                }
+            },
+
+            500: {
+                gap: 1,
+                perView: 1,
+                peek: {
+                    before: 10,
+                    after: 10,
+                }
+            },
+
         }
     }
     new Glide(".glide", config).mount()

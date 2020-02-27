@@ -1,9 +1,17 @@
  .flash-news-box{
      display: flex;
      flex-direction: row;
-     justify-content: flex-end;
+     justify-content: space-between;
      align-items: center;
      padding: 1.5rem;
+
+     @include respond(bp-12){
+         flex-direction: column;
+     }
+
+     @include respond(bp-11) {
+         flex-direction: column;
+     }
 
      &__updates{
          display: flex;
@@ -12,8 +20,15 @@
          align-content: center;
          width: 50vw;
 
-         @include respond(bp-11){
-             width: 100%;
+         @include respond(bp-12){
+            margin-bottom: 3rem;
+         }
+
+         @include respond(bp-11) {
+             margin-bottom: 3rem;
+         }
+         @include respond(bp-10){
+             width: 90vw;
          }
 
          &__marquee {
@@ -40,6 +55,10 @@
                  font-size: 2rem;
              }
 
+             @media only screen and (max-width:60em){
+                 font-size: 1.8rem;
+             }
+
 
          }
 
@@ -61,37 +80,116 @@
 
     }
 
-    &__batch-pics{
-        width: 45vw;
-
-        @include respond(bp-11){
-            width: 0vw;
+    &__testimonials{
+        width: 45vw;  
+        
+        @include respond(bp-12){
+            width: 90vw;
         }
 
-        &--modifier{
-            height: 100%;
-            width: 100%;
-            border-radius: 5px;
-            overflow: hidden;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            border: 2px $color-light-grey solid;
+        @include respond(bp-11) {
+            width: 90vw;
+        }
+
+    }
+}
+
+.testimonials-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    height: 40vh;
+    border: solid 1px $color-light-grey;
+
+    @include respond(bp-12){
+        height: 50vh;
+        margin: 1rem;
+    }
+
+    @include respond(bp-11) {
+        margin: 1rem;
+    }
+
+    @include respond(bp-5){
+        height: 33vh;
+    }
+
+    @media only screen and (max-width:25.875em){
+        border: none;
+        height: 50vh;
+    }
+
+
+    &__profile{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+        margin: 2rem;
+        width: 50%;
+
+        @media only screen and (max-width:25.875em){
+            width: 80%;
+        }
+        
+        &__image{
+            align-self: center;
+
+            &--modifier{
+                height: 15rem;
+
+                @include respond(bp-5){
+                    height: 10rem;
+                }
+            }
+        }
+
+        &__caption{
+            align-self: center;
+            font-size: 1.8rem;
+            color: $color-light-grey;
+            font-weight: 500;
+            text-transform: uppercase;
 
             @include respond(bp-12){
-                width: 95%;
+                font-size: 1.5rem;
             }
 
             @include respond(bp-11) {
-                display: none;
-                visibility: hidden;
-                height: 0;
-                width: 0;
+                font-size: 1.4rem;
             }
 
-            // @include respond(bp-5){
-            //     border: none;
-            // }
+            @include respond(bp-5){
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    &__comment{
+        text-align: center;
+        margin: 0.5rem;
+
+        &--modifier{
+            font-size: 2.5rem;
+            color: $color-light-grey;
+            font-weight: 500;
+
+            @include respond(bp-12) {
+                font-size: 2rem;
+            }
+
+            @include respond(bp-11) {
+                font-size: 2rem;
+            }
+
+            @include respond(bp-5){
+                font-size: 1.5rem;
+            }
+
+            @media only screen and (max-width:25.875em) {
+                font-size: 1.3rem;
+            }
         }
     }
 }
