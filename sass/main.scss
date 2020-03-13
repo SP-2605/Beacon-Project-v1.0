@@ -1,11 +1,9 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
-
 @import "base/animation";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
-
 @import "components/buttons";
 @import "components/card";
 @import "components/image-cluster";
@@ -14,13 +12,10 @@
 @import "components/enroll-elements";
 @import "components/flash-news";
 @import "components/gallery";
-
 @import "layout/footer";
 @import "layout/grids";
 @import "layout/header";
-
 @import "pages/home";
-
 // GLIDE.JS
 // Required Core Stylesheet
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
