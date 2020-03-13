@@ -74,8 +74,12 @@ body {
     box-sizing: border-box;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    // padding: 2rem;
+    padding: 3rem;
     background-color: $color-white-2;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 
     @include respond(bp-9){
         padding: 0;
@@ -84,6 +88,6 @@ body {
 }
 
 ::selection{
-    background-color: $color-secondary-dark;
-    color: $color-white-1;
+    // background-color: $color-secondary-dark;
+    // color: $color-white-1;
 }

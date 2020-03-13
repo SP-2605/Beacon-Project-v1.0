@@ -33,13 +33,14 @@
     border-radius: 5px;
     background-color: $color-white-1;
     box-shadow: 0 1.5rem 2rem rgba($color-black, .15);
+    // min-width: 30rem;
 
     @include respond(bp-12){
-        margin: 4rem 4rem;
+        margin: 5rem 5rem;
     }
 
     @include respond(bp-11){
-        margin: 4rem 4rem;
+        margin: 5rem 5rem;
     }
 
     @media only screen and (max-width:60em){
@@ -89,15 +90,16 @@
 
         &--image {
 
-           height: 30rem;
+           height: 25rem;
            background-size: cover;
            border-radius: 5px;
            margin: 2rem;
            background-blend-mode: multiply;
-           width: 50rem;
+           width: 30rem;
 
            @media only screen and (max-width:60em){
-               height: 32rem;
+               height: 31rem;
+               width: 45rem;
            }
 
            @include respond(bp-6){
@@ -179,7 +181,7 @@
 //Electrician Img
 .picture-1 {
     border-radius: .5rem;
-    background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582280945/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Electrician_um9bji.jpg"),
+    background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574934047/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Electrician_g83dok.jpg"),
         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
 }
 
@@ -193,14 +195,14 @@
 //Welding Img
  .picture-3 {
      border-radius: .5rem;     
-     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582282407/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Welding_cmrnvr.jpg"),
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574934048/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Welding_ltgmkg.jpg"),
          linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
  }
 
 //Sweaing Img
  .picture-4 {
      border-radius: .5rem;     
-     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582282817/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/sewing_mtpotc.jpg"),
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/v1574934048/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Sweaing_btjdlp.jpg"),
          linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
  }
 
@@ -211,6 +213,19 @@
          linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
  }
 
+// //AC Img
+ .picture-6 {
+     border-radius: .5rem;
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574934047/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-AC_ikq3wj.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+
+// //Screen Printing Img
+ .picture-7 {
+     border-radius: .5rem;
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574934048/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Screen-Printing_glm6q9.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
 
 // //Plumbing Img
  .picture-8 {

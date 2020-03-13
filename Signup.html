@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/png"
+        href="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574928333/Beacon%20Files/favicon%20%2B%20logo/Favicon.png">
+</head>
+<style>
+    body{
+        padding: 0rem!important;
+    }
+</style>
+<body>
+    <div class="signup-content">
+        <!-- IMAGE -->
+        <div class="signup-content__image">
+            <img class="signup-content__image--modifier"
+                src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574930798/Beacon%20Files/Other%20Imgs%2BVideos/signup_brreic.png"
+                alt="signup">
+        </div>
+
+        <!-- SIGNUP-FORM -->
+        <div class="signup-content__form">
+            <!-- TITLE -->
+            <div class="signup-content__form--title u-class-center u-margin-bottom-small">
+                <h2 class="heading-type-2">
+                    Member Signup
+                </h2>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="signup-content__form--profile">
+                <img class="signup-content__form--profile--modifier"
+                    src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570381661/Beacon%20Files/Icons/profile_hserdg.png"
+                    alt="Img">
+            </div>
+
+            <!-- INPUT FIELDS -->
+            <div class="signup-content__form--field">
+                <!-- NAME-->
+                <input type="text" class="signup-content__form--field--input" id="name2" placeholder="Name" required>
+                <label for="name2" class="signup-content__form--field--label">Name</label>
+                <!-- EMAIL-ID-->
+                <input type="email" class="signup-content__form--field--input" id="email-id1" placeholder="Email-Id"
+                    required>
+                <label for="email-id1" class="signup-content__form--field--label">Email-Id</label>
+                <!-- CONTACT NO -->
+                <input type="text" class="signup-content__form--field--input" id="Contact-No" placeholder="Contact-No"
+                    required maxlength="10">
+                <label for="Contact-No" class="signup-content__form--field--label">Contact-No</label>
+            </div>
+
+            <!-- RADIO BTN -->
+            <div class="signup-content__form--radio">
+                <div class="signup-content__form--radio--content">
+                    <input type="radio" class="signup-content__form--radio--input" id="Student" name="group" required>
+                    <label class="signup-content__form--radio--label" for="Student">
+                        <span class="signup-content__form--radio--button"></span>
+                        STUDENT
+                    </label>
+                </div>
+
+
+                <div class="signup-content__form--radio--content">
+                    <input type="radio" class="signup-content__form--radio--input" id="Faculty" name="group" required>
+                    <label class="signup-content__form--radio--label" for="Faculty">
+                        <span class="signup-content__form--radio--button"></span>
+                        FACULTY
+                    </label>
+                </div>
+            </div>
+
+            <!-- PROCEED-BTN -->
+            <div class="signup-content__form--proceed">
+                <!-- Proceed Button-->
+                <button onclick="window.location.href='OTP.html';" class="btn-proceed signup-content__form--proceed--modifier" target="_blank">Receive
+                    OTP</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

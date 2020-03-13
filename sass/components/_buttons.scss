@@ -1,4 +1,5 @@
 .btn,
+.btn-proceed,
 .btn-course,
 .btn-enroll{
 
@@ -6,22 +7,30 @@
     &:visited {
         text-decoration: none;
         text-transform: uppercase;
-        padding: 1.7rem 3rem;
+        padding: 1.7rem 4.3rem;
         transition: all 0.4s;
         font-size: 2rem;
         font-weight: 600;
         position: relative;
         cursor: pointer;
 
-
         @include respond(bp-6){
             padding: 1.7rem 3rem;
         }
 
         @include respond(bp-5) {
-            padding: 1.3rem 1.3rem;
-            font-size: 1.6rem;
+            padding: 1.7rem 1rem;
         }
+
+        @media only screen and (max-width: 25.875em) {
+            padding: 1.5rem 1.2rem;
+        }
+
+        @include respond(bp-4) {
+            padding: 1rem 1rem;
+            font-size: 1.5rem;
+        }
+
     }
 
     &:hover {
@@ -114,20 +123,6 @@
         animation-delay: .80s;
         animation-timing-function: ease-out;
         animation-fill-mode: backwards;
-
-        &__1 {
-            animation-name: moveBtnUp;
-            animation-duration: .80s;
-            animation-delay: .85s;
-            animation-fill-mode: backwards;
-        }
-
-        &__2 {
-            animation-name: moveBtnUp;
-            animation-duration: .85s;
-            animation-delay: .90s;
-            animation-fill-mode: backwards;
-        }
     }
 }
 
@@ -139,17 +134,12 @@
     font-size: 2.5rem!important;
     font-family: inherit;
     letter-spacing: 1px;
-    
-    @include respond(bp-12) {
-         font-size: 2rem !important;
-     }
 
-    @include respond(bp-11){
-        font-size: 1.7rem!important;
-        padding: 1.7rem 3rem!important;
+    @include respond(bp-8){
+        font-size: 2rem!important;
     }
   
-        &--register{
+        &--signup{
 
             @media only screen and (max-width:60em){
                 padding: 1.5rem 3rem!important;
@@ -160,8 +150,7 @@
             }
         }
 
-        &--course-confirm,
-        &--undertaking{
+        &--login{
             @media only screen and (max-width:60em) {
                 padding: 1.5rem 3rem!important;
             }
@@ -171,7 +160,7 @@
             }
         }
 
-        &--certificate{
+        &--procedure{
             @media only screen and (max-width:60em) {
                 padding: 1.5rem 3rem!important;
             }
@@ -186,6 +175,29 @@
         border-radius: 5px;
     }
 
+}
+
+//Proceed-Button
+.btn-proceed{
+    background-color: $color-proceed;
+    color: $color-white-1;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 1.5rem 4.3rem!important;
+    outline: none;
+    border: none;
+    transition: all .3s;
+    cursor: pointer;
+    
+    &::after {
+        content: "";
+        border-radius: 4px;
+        background-color: $color-proceed;
+    }
+
+    @media only screen and (max-width:25.875em){
+       padding: 1rem 3.5rem!important;
+    }
 }
 
 //Read More Button

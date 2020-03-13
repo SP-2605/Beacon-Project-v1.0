@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FACULTY</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="shortcut icon"
+        href="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574928333/Beacon%20Files/favicon%20%2B%20logo/Favicon.png"
+        type="image/x-icon">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.css">
+
+</head>
+
+<style>
+    blockquote {
+        border-left: 5px solid orange;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+    }
+
+    .subject-heading {
+        font-weight: 600;
+        color: #424242;
+    }
+
+    .collection {
+        width: 30vw;
+        border-radius: 7px;
+    }
+
+    #collection2 {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+
+    #collection2:target {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    .collection-heading {
+        font-family: 'Poppins', sans-serif;
+        color: #424242;
+    }
+
+    .material-icons {
+        font-size: 2rem;
+        color: orange;
+    }
+
+    .modal-heading {
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        color: #424242;
+        margin-bottom: 5rem;
+        font-weight: 500;
+    }
+
+    .upload-btn {
+        width: 10rem;
+        background-color: #ffa726;
+        font-size: 1rem;
+    }
+
+    .upload-btn:hover {
+        background-color: #f57c00;
+    }
+</style>
+
+<body>
+
+    <div>
+        <!-- SIDENAV -->
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="img.jpg">
+                    </div>
+                    <a href="#user"><img class="circle"
+                            src="https://img.icons8.com/bubbles/50/000000/user-male.png"></a>
+                    <a href="#name"><span class="white-text name">Faculty</span></a>
+                    <a href="#email"><span class="white-text email">faculty@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">face</i>MY PROFILE</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">home</i>HOME</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="http://www.siesgst.edu.in/"><i class="material-icons">room</i>SIESGST</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="../Index.html"><i class="material-icons">exit_to_app</i>LOGOUT</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+
+        <!-- MODAL -->
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4 class="modal-heading">Upload File</h4>
+                <form action="#">
+                    <div class="file-field input-field">
+                        <div class="btn upload-btn">
+                            <span>Browse File</span>
+                            <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close waves-effect waves-red btn-flat">BACK</a>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4 class="modal-heading">Attach Link</h4>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s10">
+                            <i class="material-icons prefix">link</i>
+                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix2">First Name</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close waves-effect waves-red btn-flat">BACK</a>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+        </div>
+
+        <!-- FAB -->
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large orange">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating green tooltipped waves-effect waves-light btn modal-trigger" href="#modal1"
+                        data-position="left" data-tooltip="Upload Assignment"><i class="material-icons">publish</i></a>
+                </li>
+                <li><a class="btn-floating blue tooltipped waves-effect waves-light btn modal-trigger" href="#modal2"
+                        data-position="left" data-tooltip="Attach Link"><i class="material-icons">attach_file</i></a>
+                </li>
+                <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+            </ul>
+        </div>
+
+        <!-- HEADING -->
+        <div class="container" style="position: relative; top: -2rem;">
+            <div class="row">
+                <div class="col m4">
+                    <img class="responsive-img hide-on-medium-and-up" style="border: 1px solid orange;"
+                        src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574932187/Beacon%20Files/Other%20Imgs%2BVideos/logo_u6hhkh.png"
+                        alt="Logo">
+                </div>
+
+                <div class="col m8">
+                    <p class="orange-text center">
+                        THE SOUTH INDIAN EDUCATION SOCIETY'S
+                    </p>
+                    <h5 class="orange-text center">
+                        GRADUATE SCHOOL OF TECHNOLOGY
+                    </h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- BACKQUOTE [FOR SUBJECT NAME] -->
+                <div class="col m12">
+                    <blockquote>
+                        <h3 class="subject-heading">Subject Name</h3>
+                    </blockquote>
+                </div>
+
+                <!-- COLLECTIONS [FOR STUDENTS LIST] -->
+                <div class="col m6">
+                    <h5 class="collection-heading">List of Students Enrolled for <strong>SUBJECT NAME</strong></h5>
+                    <div id="collection-1">
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="man.png" alt="" class="circle">
+                                <span class="title">Title</span>
+                                <p>First Line <br>
+                                    Second Line
+                                </p>
+                                <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                            </li>
+                            <li class="collection-item avatar">
+                                <img src="girl.png" alt="" class="circle">
+                                <span class="title">Title</span>
+                                <p>First Line <br>
+                                    Second Line
+                                </p>
+                                <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                            </li>
+                            <li class="collection-item avatar">
+                                <img src="man.png" alt="" class="circle">
+                                <span class="title">Title</span>
+                                <p>First Line <br>
+                                    Second Line
+                                </p>
+                                <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                            </li>
+                            <li class="collection-item avatar">
+                                <img src="girl.png" alt="" class="circle">
+                                <span class="title">Title</span>
+                                <p>First Line <br>
+                                    Second Line
+                                </p>
+                                <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                            </li>
+                            <li class="collection-item avatar">
+                                <img src="man.png" alt="" class="circle">
+                                <span class="title">Title</span>
+                                <p>First Line <br>
+                                    Second Line
+                                </p>
+                                <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                            </li>
+                            <li class="collection-item avatar">
+                                <img src="girl.png" alt="" class="circle">
+                                <span class="title">Title</span>
+                                <p>First Line <br>
+                                    Second Line
+                                </p>
+                                <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Pagination -->
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li class="waves-effect" onclick=".active"><a href="#collection2">2</a></li>
+                        <li class="waves-effect"><a href="#!">3</a></li>
+                        <li class="waves-effect"><a href="#!">4</a></li>
+                        <li class="waves-effect"><a href="#!">5</a></li>
+                        <li class="waves-effect"><a href="#!">6</a></li>
+                        <li class="enabled waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- LIST OF ASSIGNMENTS -->
+                <div class="col m6">
+                    <h5 class="collection-heading">List of <strong>ASSIGNMENTS</strong></h5>
+                    <ul class="collection" id="collection1">
+                        <li class="collection-item avatar">
+                            <img src="file.png" alt="" class="circle">
+                            <span class="title">Title</span>
+                            <p>First Line <br>
+                                Second Line
+                            </p>
+                            <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="file.png" alt="" class="circle">
+                            <span class="title">Title</span>
+                            <p>First Line <br>
+                                Second Line
+                            </p>
+                            <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="file.png" alt="" class="circle">
+                            <span class="title">Title</span>
+                            <p>First Line <br>
+                                Second Line
+                            </p>
+                            <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="file.png" alt="" class="circle">
+                            <span class="title">Title</span>
+                            <p>First Line <br>
+                                Second Line
+                            </p>
+                            <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="file.png" alt="" class="circle">
+                            <span class="title">Title</span>
+                            <p>First Line <br>
+                                Second Line
+                            </p>
+                            <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="file.png" alt="" class="circle">
+                            <span class="title">Title</span>
+                            <p>First Line <br>
+                                Second Line
+                            </p>
+                            <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+                        </li>
+                    </ul>
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li class="waves-effect"><a href="#">2</a></li>
+                        <li class="waves-effect"><a href="#!">3</a></li>
+                        <li class="waves-effect"><a href="#!">4</a></li>
+                        <li class="waves-effect"><a href="#!">5</a></li>
+                        <li class="waves-effect"><a href="#!">6</a></li>
+                        <li class="enabled waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>

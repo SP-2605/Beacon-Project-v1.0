@@ -25,46 +25,6 @@
 
 }
 
-.flash-news{
-    background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),
-    url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1582154425/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/News_Updates_qcbcam.jpg");
-    padding: 10rem 0;
-    background-size: cover;
-    background-attachment: fixed;
-
-    @include respond(bp-10){
-        padding: 5rem 0;
-    }
-
-    @include respond(bp-7){
-        background-attachment: scroll;
-        -webkit-background-attachment: scroll;
-        background-size: cover;
-    }
-}
-
-
-.gallery{
-    background-color: $color-white-2;
-    scroll-behavior: smooth;
-    padding: 10rem 0;
-
-    @include respond(bp-10){
-        padding: 5rem 0;
-    }
-
-    @include respond(bp-7){
-        padding: 10rem 0rem;
-        background-attachment: scroll;
-        -webkit-background-attachment: scroll;
-        background-size: cover;
-    }
-
-    @include respond(bp-5){
-        padding: 5rem 0;
-    }
-}
-
 
 .faculty-section {
     background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),
@@ -76,6 +36,9 @@
     scroll-behavior: smooth;
     padding: 10rem 0rem;
 
+    @include respond(bp-12){
+        padding: 12rem 0rem;
+    }
 
     @include respond(bp-11) {
         padding: 10rem 0rem;
@@ -86,9 +49,45 @@
     }
 
     @include respond(bp-7){
-        background-attachment: scroll;
-        -webkit-background-attachment: scroll;
-        background-size: cover;
+        transform: skewY(-7deg);
+        padding: 10rem 0rem;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+
+        & > *{
+            transform: skewY(7deg);
+        }
+        // TO FIX THE BACKGROUNG FIX IN MOBILE DEVICES
+        .faculty-section::before{
+             content: "";
+             display: block;
+             position: fixed;
+             left: 0;
+             top: 0;
+             width: 100%;
+             height: 100%;
+             z-index: -10;
+             background: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),
+             url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574930796/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-3_bqtr9h.jpg") no-repeat center center;
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+             background-size: cover;
+        }
+
+    }
+
+    @include respond(bp-5){
+        padding: 10rem 0rem;
+    }
+
+     @media only screen and (max-width:25.880em) {
+        padding: 7rem 0rem;
+    }
+
+
+    @media only screen and (max-width:22.5em) {
+        padding: 7rem 0rem;
     }
 
 }
@@ -97,6 +96,10 @@
     background-color: $color-white-2;
     scroll-behavior: smooth;
     padding: 10rem 0rem;
+
+    @include respond(bp-12){
+        padding: 12rem 0rem;
+    }
 
     @include respond(bp-11){
         padding: 10rem 0rem;
@@ -107,9 +110,21 @@
     }
 
     @include respond(bp-7) {
-        padding: 5rem 0rem;
+        padding: 8rem 0rem;
     }
 
+    @include respond(bp-6){
+        padding: 8rem 0rem;
+    }
+
+    @media only screen and (max-width:25.880em) {
+        padding: 7rem 0rem;
+    }
+
+
+    @media only screen and (max-width:22.5em) {
+        padding: 7rem;
+    }
 }
 
 
@@ -123,7 +138,10 @@
     backface-visibility: hidden;            //FOR PROVIDING HARDWARE ACCELERATION WHILE SCROLLING
     scroll-behavior: smooth;
     padding: 15rem 0rem;
-    z-index: 5;
+
+    @include respond(bp-12){
+        padding: 12rem 0rem;
+    }
 
     @include respond(bp-11) {
         padding: 10rem 0rem;
@@ -134,8 +152,40 @@
     }
 
     @include respond(bp-7) {
-        background-attachment: scroll;
-        -webkit-background-attachment: scroll;
+        transform: skewY(-7deg);
+        padding: 7rem 0rem;
+        height: 50vh;
+
+        &>* {
+            transform: skewY(7deg);
+        }
+
+        // TO FIX THE BACKGROUNG FIX IN MOBILE DEVICES
+        .faculty-section::before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),
+                url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1574930796/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-3_bqtr9h.jpg") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+    }
+
+    @include respond(bp-6){
+        padding: 10rem 0rem 17rem 0rem;
+    }
+
+    @include respond(bp-5){
+        padding: 8rem 0rem 18rem 0rem;
     }
 
 
@@ -147,5 +197,33 @@
         appearance: none;
         margin: 0;
     }
+
+    // @include respond(bp-11){
+    //     // clip-path: polygon(50% 12%, 100% 0, 100% 86%, 50% 100%, 0 86%, 0 0);
+    //     margin-top: -11rem;
+    //     margin-bottom: -16rem;
+    // }    
+
+    // @include respond(bp-10){
+    //     // clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0, 50% 16%);
+    //     height: 30rem;
+    // }
+
+    // @include respond(bp-6){
+    //     clip-path: polygon(0 23%, 100% 0%, 100% 77%, 0% 100%);
+    //     margin-top: -18rem;
+    // }
+
+    // @media only screen and(max-width:23.4375em){
+    //     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    // }
+
+    // @media only screen and(max-width:22.5em){
+    //     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    // }
+
+    // @include respond(bp-3){
+    //     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    // }
 }
 
